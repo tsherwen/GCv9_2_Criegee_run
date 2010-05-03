@@ -1,0 +1,11 @@
+Claire Carouge and Bob Yantosca
+30 April 2010
+
+
+This directory contains input files for the standard simulation as of
+the GEOS-Chem version 8-03-01.
+
+This set of input files was used for the 1 month benchmark.
+
+The restart file is to be used with Linoz since the Ox tracer comes from a
+tagged Ox simulation spinned-up with Linoz.
