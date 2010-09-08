@@ -3,6 +3,11 @@
 *** See http://www.env.leeds.ac.uk/~mat/GEOS-CHEM/GEOS-CHEM_Chemistry.htm
 *** for more information about individual species and reaction rates
 
+For GEOS-Chem v8-02-01 and higher (jmao, fp, 9/8/10)
+==============================================================================
+(1) Correct yield of isoprene nitrates. See:
+http://wiki.seas.harvard.edu/geos-chem/index.php/Chemistry_Issues#yield_of_isoprene_nitrates
+
 For GEOS-Chem v8-02-01 and higher (jmao, dbm, paul palmer, 4/20/09)
 ==============================================================================
 (1) Updated available reactions from JPL06, IUPAC06
@@ -465,8 +470,8 @@ A   72 2.00E-31  3.4E+00      0 1 P   0.60     0.     0.
 +                   +                   +                   +             
 +                   +                   +                   +             
 +                   +                   +                   +
-A   73 9.52E-05  3.2E+00 -10900 1 P   0.60     0.     0.         
-       1.38E+15  1.4E+00 -10900 0     0.00     0.     0.         
+A   73 9.52E-05  3.4E+00 -10900 1 P   0.60     0.     0.         
+       1.38E+15  1.1E+00 -10900 0     0.00     0.     0.         
       HNO4          +                         M                                
 =1.000HO2           +1.000NO2           +                   +             
 +                   +                   +                   +             
@@ -641,14 +646,13 @@ A  453 2.70E-12  0.0E+00    350 0     0.00     0.     0.
 +                   +                   +                   +             
 +                   +                   +                   +             
 +                   +                   +                   +
-A  453 2.70E-12  0.0E+00    350 1 B   0.00     0.     0.         
-       5.00E+00  0.0E+00      0 0     0.00     0.     0.         
+A  453 2.70E-12  0.0E+00    350 0     0.00     0.     0.         
       RIO2          +     NO                                              
 =0.900NO2           +0.900HO2           +0.340IALD          +0.340MVK     
 +0.220MACR          +0.560CH2O          +                   +             
 +                   +                   +                   +             
 +                   +                   +                   +
-A  453 2.70E-12  0.0E+00    350 1 A   0.00     0.     0.         
+D  453 2.70E-12  0.0E+00    350 1 A   0.00     0.     0.         
        5.00E+00  0.0E+00      0 0     0.00     0.     0.         
       RIO2          +     NO                                              
 =1.000HNO3          +                   +                   +             
