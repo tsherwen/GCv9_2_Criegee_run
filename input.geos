@@ -1,4 +1,4 @@
-GEOS-CHEM SIMULATION v8-03-01: GEOS-5 1-month benchmark
+GEOS-CHEM SIMULATION v9-01-01: GEOS-5 NOx-Ox-HC-Aerosol simulation (43 tracers)
 ------------------------+------------------------------------------------------
 %%% SIMULATION MENU %%% :
 Start YYYYMMDD, HHMMSS  : 20050701 000000
@@ -12,6 +12,7 @@ Root data directory     : /as/group/geos/data/GEOS_4x5/
  => GEOS-3     subdir   : GEOS_3/YYYY/MM/
  => GEOS-4     subdir   : GEOS_4_v4/YYYY/MM/
  => GEOS-5     subdir   : GEOS_5/YYYY/MM/
+ => MERRA  subdirectory : MERRA/YYYY/MM/
 Dir w/ 1x1 emissions etc: /as/group/geos/data/GEOS_1x1/
 Temporary directory     : ./
 Unzip met fields?       : F
@@ -86,7 +87,7 @@ Convect Timestep (min)  : 30
 Turn on emissions?      : T
 Emiss timestep (min)    : 60 
 Include anthro emiss?   : T
- => Scale 1985 to year  : -1
+ => Scale to (1985-2005): -1
  => Use EMEP emissions? : T
  => Use BRAVO emissions?: T
  => Use EDGAR emissions?: T
@@ -103,7 +104,7 @@ Include biogenic emiss? : T
  => Use MEGAN for MONO? : T
  => Isoprene scaling    : 1
 Include biomass emiss?  : T
- => Seasonal biomass?   : T
+ => Seasonal biomass?   : F
  => Scaled to TOMSAI?   : F
  => Use GFED2 biomass?  :---
     => monthly GFED2?   : T 
@@ -313,6 +314,22 @@ Dir w/ O3 P/L rate files: /as/data/geos/GEOS_MEAN/O3_PROD_LOSS/2003.v6-01-05/
 Save benchmark output?  : T
 File w/ initial Ox      : Ox.mass.initial
 File w/ final Ox        : Ox.mass.final
+------------------------+------------------------------------------------------
+%%% NESTED GRID MENU %%%:  
+Save TPCORE BC's        : F
+Input BCs at 2x2.5?     : T
+Over North America?     : F
+TPCORE NA BC directory  : BC_2x25_NA/
+Over Europe?            : F
+TPCORE EU BC directory  : BC_2x25_EU/
+Over China?             : F
+TPCORE CH BC directory  : BC_2x25_CH/
+Over Custom Region?     : F
+TPCORE BC directory     : BC_2x25/
+BC timestep [min]       : 180
+LL box of BC region     :   9  26
+UR box of BC region     :  29  41
+1x1 offsets I0_W, J0_W  :   3   3
 ------------------------+------------------------------------------------------
 %%% UNIX CMDS MENU %%%  : 
 Background symbol       : & 
