@@ -114,12 +114,7 @@ Include biomass emiss?  : T
 Individual NOx sources  :---
  => Use aircraft NOx?   : T
  => Use lightning NOx?  : T
-    => Scale glb flrate?: T
-    => OTD reg redist?  : F
-    => OTD loc redist?  : T
-    => Use CTH param?   : T
-    => Use MFLUX param? : F
-    => Use PRECON param?: F
+    => Spat-seas constr?: T
  => Use soil NOx        : T
  => Use fertilizer NOx  : T
 NOx scaling             : 1
