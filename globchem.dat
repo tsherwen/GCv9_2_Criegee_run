@@ -13,9 +13,14 @@
 #\\
 #\\
 # !REVISION HISTORY: 
+#  15 Dec 2011 (v9-01-03)
+#  ----------------------
+#     Updates from J. Mao:
+#     (1) Add dry deposition for MVK and MACR
+# 
 #  07 Nov 2011 (v9-01-03) 
 #  ----------------------
-#     Updates from F. Paulot
+#     Updates from F. Paulot:
 #     (1) The GLPAN and GLCO3 rxns have been removed.  These rxns were
 #          causing an artificial loss of NOx.
 #     (2) I have physically removed GLCO3, GLP, GLPAN, GPAN, ISNO3, MNO3, 
@@ -27,12 +32,12 @@
 #                                                                             .
 #  08 Sep 2010 (v8-02-01) 
 #  ----------------------
-#  Updates from J. Mao, F. Paulot
+#     Updates from J. Mao, F. Paulot:
 #     (1) Correct the yield of isoprene nitrates
 #                                                                             .
 #  20 Apr 2009 (v8-02-01) 
 #  ----------------------
-#     Updates from J. Mao, D. Millet, P. Palmer
+#     Updates from J. Mao, D. Millet, P. Palmer:
 #     (1) Updated available rxns from JPL06, IUPAC06
 #     (2) Updated acetaldehyde rxns (D. Millet)
 #     (3) Updated some rxns inconsistent with Mat Evans' manual.
@@ -138,6 +143,10 @@ A DRYPMN             1.00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
 A DRYPPN             1.00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
                      0   0   0   0   0   0   0   0   0
 A DRYR4N2            1.00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+                     0   0   0   0   0   0   0   0   0
+A DRYMVK             1.00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+                     0   0   0   0   0   0   0   0   0
+A DRYMACR            1.00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
                      0   0   0   0   0   0   0   0   0
 I EMISSION           1.00 1.000E+00 1.000E+00 1.000E+00 1.000E+00
                      0   0   0   0   0   0   0   0   0
@@ -1761,6 +1770,18 @@ A    0 0.00E+00  0.0E+00      0 0     0.00     0.     0.
 A    0 0.00E+00  0.0E+00      0 0     0.00     0.     0.         
       R4N2          +                                                     
 =1.000DRYDEP        +1.000DRYR4N2       +                   +             
++                   +                   +                   +             
++                   +                   +                   +             
++                   +                   +                   +
+A    0 0.00E+00  0.0E+00      0 0     0.00     0.     0.         
+      MVK           +                                                     
+=1.000DRYDEP        +1.000DRYMVK        +                   +             
++                   +                   +                   +             
++                   +                   +                   +             
++                   +                   +                   +
+A    0 0.00E+00  0.0E+00      0 0     0.00     0.     0.         
+      MACR          +                                                     
+=1.000DRYDEP        +1.000DRYMACR       +                   +             
 +                   +                   +                   +             
 +                   +                   +                   +             
 +                   +                   +                   +
