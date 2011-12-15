@@ -1,26 +1,67 @@
-# PHOTOLYSIS REACTIONS - MASTER RATEFILE - Paul Brown, Oliver Wild & David Rowley
-# Centre for Atmospheric Science, Cambridge, U.K.  Release date:  22 November 1993
-# SCCS version information: @(#)photol.d	1.2 5/11/94
-# 
-# REVISION HISTORY:
-# -----------------
-# (1) Modified for Harvard chemistry: several reactions added, re-ordered per chem.dat
-#     Also putting in the Harvard names in col 1, the UCI x-sec names in last col !!!
-# 					-Prashant Murti [4/13/98]
+#------------------------------------------------------------------------------
+#          Harvard University Atmospheric Chemistry Modeling Group            !
+#------------------------------------------------------------------------------
+#BOP
 #
-# (2) The new peroxide recycling now activates the following photolysis species:
-#       GP,IAP,INPN,ISN1,ISNP,MAOP,MRP,PP,PRPN,RIP,VRP.
-#     Also be sure to set parameter JPMAX = 55 in "cmn_fj.h". 
-#                                       - Randall Martin & Bob Yantosca [12/20/00]
+# !MODULE: ratj.d
 #
-# (3) New updates from FASTJX. (jmao,ccarouge, 04/20/09)
+# !DESCRIPTION: This is the master photolysis mechanism file for GEOS-Chem.
+#  It is a look-up table which cross-references the GEOS-Chem species names
+#  with the FAST-J species names.  Branches of a reaction are listed as
+#  multiple reactions with the same species name.
+#\\
+#\\
+#  This file describes the GEOS-Chem STANDARD chemical mechanism.
+#\\
+#\\
+# !REMARKS:
+#  Original documentation:
+#  PHOTOLYSIS REACTIONS - MASTER RATEFILE
+#  Paul Brown, Oliver Wild & David Rowley
+#  Centre for Atmospheric Science, Cambridge, U.K.  
+#  Release date:  22 November 1993
+#  SCCS version information: @(#)photol.d	1.2 5/11/94
 #
-# (4) Updated the branching ratio of HNO4.  Changed the lines:
-#        Line 13 HNO4 from 33.3 to 5.0
-#        Line 14 HNO4 from 66.7 to 95.0
-#     This is based on Jimenez et al, "Quantum yields of OH, HO2 and NO3
-#     in the UV photolysis of HO2NO2" (jmao, bmy, 10/27/09)
-# 
+# !REVISION HISTORY: 
+#  07 Nov 2011 (v9-01-03) 
+#  ----------------------
+#     Update from F. Paulot:
+#     (1) I have physically removed GLCO3, GLP, GPAN, MNO3, ISNO3, MNO3, 
+#          O2CH2OH, MVN2 and their associated reactions from "globchem.dat".  
+#          Note that MNO3 and GLP have photolysis reactions.  Therefore, 
+#          I had to also delete these species from "ratj.d" as well.
+#                                                                             .
+#  27 Oct 2009 (v8-02-04)
+#  -----------------------
+#     Updates from J. Mao:
+#     (1) Updated the branching ratio of HNO4.  Changed the lines:
+#            Line 13 HNO4 from 33.3 to 5.0
+#            Line 14 HNO4 from 66.7 to 95.0
+#         This is based on Jimenez et al, "Quantum yields of OH, HO2 and NO3
+#         in the UV photolysis of HO2NO2"
+#                                                                             .
+#  20 Apr 2009 (v8-02-01)
+#  -----------------------
+#     Update from J. Mao & C. Carouge)
+#     (1) Add new cross-sections etc. from FAST-JX
+#                                                                             .
+#  20 Apr 2000:
+#  -----------------------
+#     Update from R. Martin & R. Yantosca:
+#     (1) The new peroxide recycling scheme now activates the following 
+#         photolysis species: GP,IAP,INPN,ISN1,ISNP,MAOP,MRP,PP,PRPN,RIP,VRP.
+#     (2) Also be sure to set parameter JPMAX = 55 in "cmn_fj.h". 
+#                                                                             .
+#  13 Apr 1998:
+#  -----------------------
+#     Update from P. Murti
+#     (1) Modified for Harvard chemistry: several reactions added, re-ordered 
+#         per chem.dat
+#     (2) Also putting in the Harvard names in col 1, the UCI x-sec names 
+#         in the last column.
+#EOP
+#------------------------------------------------------------------------------
+#BOC
 #
 # Harvard species             Products - UCI notation                              UCI xsec
 # ===============           ===============================                        ========
@@ -49,60 +90,58 @@
    23 ACET       PHOTON     MeCO3      MeOO                 0.00E+00  0.00    100.0  AcetA 
    24 ACET       PHOTON     MeOO       MeOO       CO        0.00E+00  0.00    100.0  AcetB 
    25 MEK        PHOTON     MeCO3      EtOO                 0.00E+00  0.00    100.0  EtCOMe
-   26 MNO3       PHOTON     HCHO       H2O        NO2       0.00E+00  0.00    100.0  MeNO3  
-   27 GLYC       PHOTON     HCHO       HO2        CO        0.00E+00  0.00    100.0  HOMeCHO
-   28 GLYX       PHOTON     H2         CO         HCHO      0.00E+00  0.00    100.0  Glyxla 
-   29 GLYX       PHOTON     CO         HO2                  0.00E+00  0.00    100.0  Glyxlb 
-   30 MGLY       PHOTON     MeCO3      CO         HO2       0.00E+00  0.00    100.0  MeCOCHO
-   31 MGLY       PHOTON     Acet       CO                   0.00E+00  0.00      0.0  MeCOCHO
-   32 MVK        PHOTON     PRPE       CO                   0.00E+00  0.00     60.0  MeCOVi 
-   33 MVK        PHOTON     MeCO3      HCHO       CO  HO2   0.00E+00  0.00     20.0  MeCOVi 
-   34 MVK        PHOTON     MeOO       MAO3                 0.00E+00  0.00     20.0  MeCOVi 
-   35 MACR       PHOTON     MAO3       HO2                  0.00E+00  0.00     50.0  MACR   
-   36 MACR       PHOTON     CO  HO2  MGLY  HO2  MeCO3  HCHO 0.00E+00  0.00     50.0  MACR   
-   37 HAC        PHOTON     MeCO3      HCHO       HO2       0.00E+00  0.00    100.0  AcetA  
-   38 ETP        PHOTON     OH         HO2        Acet      0.00E+00  0.00    100.0  ROOH   
-   39 RA3P       PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH   
-   40 RB3P       PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH   
-   41 R4P        PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH   
-   42 RP         PHOTON     OH         HO2        Acet      0.00E+00  0.00    100.0  ROOH   
-   43 R4N2       PHOTON     NO2 MeCOMe MEK MO2 HO2 ALD2 ... 0.00E+00  0.00    100.0  MeNO3  
-   44 MAP        PHOTON     OH         MO2                  0.00E+00  0.00    100.0  ROOH   
-   45 INPN       PHOTON     OH         HO2        RCHO NO2  0.00E+00  0.00    100.0  ROOH
-   46 PRPN       PHOTON     OH         HO2        RCHO NO2  0.00E+00  0.00    100.0  ROOH
-   47 PP         PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH
-   48 GP         PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH
-   49 GLP        PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH
-   50 RIP        PHOTON     OH HO2 CH2O MVK MACR RIO1 IALD  0.00E+00  0.00    100.0  ROOH
-   51 IAP        PHOTON     OH HO2  CO  H2  HAC  GLYC  MGLY 0.00E+00  0.00    100.0  ROOH
-   52 ISNP       PHOTON     OH         HO2        RCHO NO2  0.00E+00  0.00    100.0  ROOH
-   53 VRP        PHOTON     OH  HO2  CH2O  MCO3  GLYC  MGLY 0.00E+00  0.00    100.0  ROOH
-   54 MRP        PHOTON     OH  HO2  MGLY  HAC  CO  CH2O    0.00E+00  0.00    100.0  ROOH 
-   55 MAOP       PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH
+   26 GLYC       PHOTON     HCHO       HO2        CO        0.00E+00  0.00    100.0  HOMeCHO
+   27 GLYX       PHOTON     H2         CO         HCHO      0.00E+00  0.00    100.0  Glyxla 
+   28 GLYX       PHOTON     CO         HO2                  0.00E+00  0.00    100.0  Glyxlb 
+   29 MGLY       PHOTON     MeCO3      CO         HO2       0.00E+00  0.00    100.0  MeCOCHO
+   30 MGLY       PHOTON     Acet       CO                   0.00E+00  0.00      0.0  MeCOCHO
+   31 MVK        PHOTON     PRPE       CO                   0.00E+00  0.00     60.0  MeCOVi 
+   32 MVK        PHOTON     MeCO3      HCHO       CO  HO2   0.00E+00  0.00     20.0  MeCOVi 
+   33 MVK        PHOTON     MeOO       MAO3                 0.00E+00  0.00     20.0  MeCOVi 
+   34 MACR       PHOTON     MAO3       HO2                  0.00E+00  0.00     50.0  MACR   
+   35 MACR       PHOTON     CO  HO2  MGLY  HO2  MeCO3  HCHO 0.00E+00  0.00     50.0  MACR   
+   36 HAC        PHOTON     MeCO3      HCHO       HO2       0.00E+00  0.00    100.0  AcetA  
+   37 ETP        PHOTON     OH         HO2        Acet      0.00E+00  0.00    100.0  ROOH   
+   38 RA3P       PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH   
+   39 RB3P       PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH   
+   40 R4P        PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH   
+   41 RP         PHOTON     OH         HO2        Acet      0.00E+00  0.00    100.0  ROOH   
+   42 R4N2       PHOTON     NO2 MeCOMe MEK MO2 HO2 ALD2 ... 0.00E+00  0.00    100.0  MeNO3  
+   43 MAP        PHOTON     OH         MO2                  0.00E+00  0.00    100.0  ROOH   
+   44 INPN       PHOTON     OH         HO2        RCHO NO2  0.00E+00  0.00    100.0  ROOH
+   45 PRPN       PHOTON     OH         HO2        RCHO NO2  0.00E+00  0.00    100.0  ROOH
+   46 PP         PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH
+   47 GP         PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH
+   48 RIP        PHOTON     OH HO2 CH2O MVK MACR RIO1 IALD  0.00E+00  0.00    100.0  ROOH
+   49 IAP        PHOTON     OH HO2  CO  H2  HAC  GLYC  MGLY 0.00E+00  0.00    100.0  ROOH
+   50 ISNP       PHOTON     OH         HO2        RCHO NO2  0.00E+00  0.00    100.0  ROOH
+   51 VRP        PHOTON     OH  HO2  CH2O  MCO3  GLYC  MGLY 0.00E+00  0.00    100.0  ROOH
+   52 MRP        PHOTON     OH  HO2  MGLY  HAC  CO  CH2O    0.00E+00  0.00    100.0  ROOH 
+   53 MAOP       PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH
  9999                                                       0.00E-00  0.00      0.0         
 
 
 
- NOTES:                                                                          
- -----                                                                           
-[4/15/98]
-Oliver Wild: All reaction data from JPL '97, IUPAC IV. IUPAC V is soon
-expected. - ppm
-
-
-  All reaction data taken from IUPAC supplement IV unless otherwise indicated.
-
-  JPL - data from JPL (latest assessment as far as possible)
-                                                                                 
-  ? - reaction products unknown
-  * - user strongly advised to consult source material
-  B - branching ratio assumed equal for all channels in the absence of more information
-  U - upper limit for rate coefficient
-
-
- Changes since 08/3/93 release:
-  O now written as O(3P)
-                                                                                 
-(Note that the second of the acetaldehyde channels above occurs at wavelengths
-less than 289 nm, and therefore doesn't appear in the Fast-J region at all - 
-I've simply included it here for completeness) - [from Oliver, 3/7/98]
+#  NOTES:                                                                     
+#  -----                                                                 
+#  [4/15/98]
+#  Oliver Wild: All reaction data from JPL '97, IUPAC IV. IUPAC V is soon
+#  expected. - ppm
+# 
+#  All reaction data taken from IUPAC supplement IV unless otherwise indicated.
+# 
+#  JPL - data from JPL (latest assessment as far as possible)
+#                                     
+#    ? - reaction products unknown
+#    * - user strongly advised to consult source material
+#    B - branching ratio assumed equal for all channels in the absence 
+#         of more information
+#    U - upper limit for rate coefficient
+#  
+#  Changes since 08/3/93 release:
+#   O now written as O(3P)
+#                                                                             
+# (Note that the second of the acetaldehyde channels above occurs at 
+#  wavelengths less than 289 nm, and therefore doesn't appear in the 
+#  Fast-J region at all -  I've simply included it here for completeness) 
+#  - [from Oliver, 3/7/98]

@@ -1,56 +1,88 @@
-*** SMVGEAR II "globchem.dat" chemistry mechanism file (bdf, bmy, 6/19/06) ***
-***
-*** See http://www.env.leeds.ac.uk/~mat/GEOS-CHEM/GEOS-CHEM_Chemistry.htm
-*** for more information about individual species and reaction rates
-
-For GEOS-Chem v8-02-01 and higher (jmao, fp, 9/8/10)
-==============================================================================
-(1) Correct yield of isoprene nitrates. See:
-http://wiki.seas.harvard.edu/geos-chem/index.php/Chemistry_Issues#yield_of_isoprene_nitrates
-
-For GEOS-Chem v8-02-01 and higher (jmao, dbm, paul palmer, 4/20/09)
-==============================================================================
-(1) Updated available reactions from JPL06, IUPAC06
-(2) Updated acetaldehyde reactions updated by Dylan Millet
-(3) Updated some reactions inconsistent with Mat Evan's manual.
-
-For GEOS-CHEM v8-01-04 and higher (phs, 3/4/08)
-==============================================================================
-(1) Now includes emissions rxn for HNO3 and O3
-
-For GEOS-Chem v7-04-06 and higher (bastien, bmy, 6/19/06)
-==============================================================================
-(1) Turn off HO2 uptake by aerosols, in order to get better results in the
-    tropics.  Set the flag for the reaction HO2 -> 0.5 H2O2 from active ("A") 
-    to dead ("D").  SMVGEAR will then skip this reaction.
-
-For GEOS-Chem v7-04-05 and higher (dkh, bmy, 6/1/06)
-==============================================================================
-(1) Added LISOPOH as a species, to keep track of the amount of ISOP that
-    is lost via rxn with OH.  This is needed for the SOA chemistry. 
- 
-    *** If you are running w/o the online SOA tracers, set LISOPOH to "D" ***
-    *** If you are running w/  the online SOA tracers, set LISOPOH to "A" ***
-
-For GEOS-CHEM v5-07-06 and higher (rjp, bmy, 8/4/03)
-==============================================================================
-(1) Now also species declaration and rxn for DRYN2O5, since we are now
-    doing N2O5 deposition. (bmy, 8/4/03)
-
-For GEOS-CHEM v5-07-05 and higher (mje, bmy, 8/1/03)
-==============================================================================
-(1) Now updated various rxn rates to JPL 2000.  For more info see:
-    www-as.harvard.edu/chemistry/trop/geos/documentation/geoschem_mech.pdf
-
-For GEOS-CHEM v5-05 (bdf, bmy, 4/10/03)
-==============================================================================
-(1) Now includes all of the same rxns from the SMVGEAR I "chem.dat" file 
-     from v5-03-01, including DMS and SO2 rxns.
-(2) Currently molecule mass is left out, this is needed for surface reactions
-(3) Mass balance is disabled, all inputs are zero.
-(4) Currently only 1 chemistry is used.
-(5) Currently not using "AB" that tells whether absorbs radiation.  
-     Our mechanism does this.
+#------------------------------------------------------------------------------
+#          Harvard University Atmospheric Chemistry Modeling Group            !
+#------------------------------------------------------------------------------
+#BOP
+#
+# !MODULE: globchem.dat 
+#
+# !DESCRIPTION: This is the master mechanism file for GEOS-Chem.  It defines
+#  the species and reactions that are used by the SMVGEAR II or KPP solvers.
+#\\
+#\\
+#  This file describes the GEOS-Chem STANDARD chemical mechanism.
+#\\
+#\\
+# !REVISION HISTORY: 
+#  07 Nov 2011 (v9-01-03) 
+#  ----------------------
+#     Updates from F. Paulot
+#     (1) The GLPAN and GLCO3 rxns have been removed.  These rxns were
+#          causing an artificial loss of NOx.
+#     (2) I have physically removed GLCO3, GLP, GLPAN, GPAN, ISNO3, MNO3, 
+#          O2CH2OH, MVN2 and their associated reactions.  Note that MNO3 and 
+#          GLP have photolysis reactions.  Therefore, ratj.d needs to be 
+#          modified accordingly.
+#     (3) I have made GLYX active. Not sure why it's not active by default.
+#          ROH is also now set to active.
+#                                                                             .
+#  08 Sep 2010 (v8-02-01) 
+#  ----------------------
+#  Updates from J. Mao, F. Paulot
+#     (1) Correct the yield of isoprene nitrates
+#                                                                             .
+#  20 Apr 2009 (v8-02-01) 
+#  ----------------------
+#     Updates from J. Mao, D. Millet, P. Palmer
+#     (1) Updated available rxns from JPL06, IUPAC06
+#     (2) Updated acetaldehyde rxns (D. Millet)
+#     (3) Updated some rxns inconsistent with Mat Evans' manual.
+#                                                                             .
+#  04 Mar 2008 (v8-01-04)
+#  ----------------------
+#     Update from P. Le Sager:
+#     (1) Now includes emissions rxn for HNO3 and O3
+#                                                                             .
+#  19 Jun 2006 (v7-04-06)
+#  ----------------------
+#     Updates from B. Sauvage:
+#     (1) Turn off HO2 uptake by aerosols, in order to get better results 
+#          in the tropics.  
+#     (2) Set the flag for the reaction HO2 -> 0.5 H2O2 from active ("A") 
+#          to dead ("D").  SMVGEAR will then skip this reaction.
+#                                                                             .
+#  06 Jan 2006: (v7-04-05)
+#  -----------------------
+#     Updates by D. Henze:
+#     (1) Added LISOPOH as a species, to keep track of the amount of ISOP that
+#         is lost via rxn with OH.  This is needed for the SOA chemistry. 
+#                                                                             .
+#         *** If you are running w/o the online SOA tracers, set LISOPOH to "D"
+#         *** If you are running w/  the online SOA tracers, set LISOPOH to "A"
+#                                                                             .
+#  04 Aug 2003 (v5-07-06)
+#  ----------------------
+#     Update from R. Park:
+#     (1) Now also species declaration and rxn for DRYN2O5, since we are now
+#         doing N2O5 deposition. (bmy, 8/4/03)
+#                                                                             .
+#  01 Aug 2003 (v5-07-05)
+#  ----------------------
+#     Update from M. Evans:
+#     (1) Now updated various rxn rates to JPL 2000.  For more info see:
+#     www-as.harvard.edu/chemistry/trop/geos/documentation/geoschem_mech.pdf
+#                                                                             .
+#  10 Apr 2003 (v5-05)
+#  ----------------------
+#     Updates from B. Field:
+#     (1) Now includes all of the same rxns from the SMVGEAR I "chem.dat" file 
+#          from v5-03-01, including DMS and SO2 rxns.
+#     (2) Currently molecule mass is left out, this is needed for surface rxns
+#     (3) Mass balance is disabled, all inputs are zero.
+#     (4) Currently only 1 chemistry is used.
+#     (5) Currently not using "AB" that tells whether absorbs radiation.  
+#          Our mechanism does this.
+#EOP
+#------------------------------------------------------------------------------
 
 #=============================================================================
 # Species List
@@ -117,19 +149,11 @@ A ETP                1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
                      0   0   0   0   0   0   0   0   0
 A GCO3               1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
                      0   0   0   0   0   0   0   0   0
-I GLCO3              1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
-                     0   0   0   0   0   0   0   0   0
-I GLP                1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
-                     0   0   0   0   0   0   0   0   0
-I GLPAN              1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
-                     0   0   0   0   0   0   0   0   0
 A GLYC               1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
                      0   0   0   0   0   0   0   0   0
-I GLYX               1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
+A GLYX               1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
                      0   0   0   0   0   0   0   0   0
 A GP                 1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
-                     0   0   0   0   0   0   0   0   0
-A GPAN               1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
                      0   0   0   0   0   0   0   0   0
 I H                  1.00 4.000E-20 4.000E-20 4.000E-20 4.000E-20
                      0   0   0   0   0   0   0   0   0
@@ -163,8 +187,6 @@ A INPN               1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
                      0   0   0   0   0   0   0   0   0
 A ISN1               1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
                      0   0   0   0   0   0   0   0   0
-I ISNO3              1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
-                     0   0   0   0   0   0   0   0   0
 A ISNP               1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
                      0   0   0   0   0   0   0   0   0
 A ISOP               1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
@@ -189,8 +211,6 @@ A MEK                1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
                      0   0   0   0   0   0   0   0   0
 A MGLY               1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
                      0   0   0   0   0   0   0   0   0
-I MNO3               1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
-                     0   0   0   0   0   0   0   0   0
 A MO2                1.00 4.000E-15 4.000E-15 4.000E-15 4.000E-15
                      0   0   0   0   0   0   0   0   0
 I MOH                1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
@@ -202,8 +222,6 @@ A MRO2               1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
 A MRP                1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
                      0   0   0   0   0   0   0   0   0
 A MVK                1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
-                     0   0   0   0   0   0   0   0   0
-A MVN2               1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
                      0   0   0   0   0   0   0   0   0
 I N2                 1.00 7.808E-01 7.808E-01 7.808E-01 7.808E-01
                      0   0   0   0   0   0   0   0   0
@@ -226,8 +244,6 @@ I O                  1.00 4.000E-20 4.000E-20 4.000E-20 4.000E-20
 D O1D                1.00 4.000E-22 4.000E-22 4.000E-22 4.000E-22
                      0   0   0   0   0   0   0   0   0
 I O2                 1.00 2.095E-01 2.095E-01 2.095E-01 2.095E-01
-                     0   0   0   0   0   0   0   0   0
-I O2CH2OH            1.00 4.000E-20 4.000E-20 4.000E-20 4.000E-20
                      0   0   0   0   0   0   0   0   0
 A O3                 1.00 2.000E-08 2.000E-08 2.000E-08 2.000E-08
                      0   0   0   0   0   0   0   0   0
@@ -273,7 +289,7 @@ A RIO2               1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
                      0   0   0   0   0   0   0   0   0
 A RIP                1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
                      0   0   0   0   0   0   0   0   0
-I ROH                1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
+A ROH                1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
                      0   0   0   0   0   0   0   0   0
 A RP                 1.00 1.000E-20 1.000E-20 1.000E-20 1.000E-20
                      0   0   0   0   0   0   0   0   0
@@ -515,7 +531,7 @@ A   83 7.40E-04  4.4E+00 -11000 1 P   0.60     0.     0.
 +                   +                   +                   +             
 +                   +                   +                   +             
 +                   +                   +                   +
-A  159 4.00E-13  0.0E+00      0 0     0.00     0.     0.         
+D  159 4.00E-13  0.0E+00      0 0     0.00     0.     0.         
       HCOOH         +     OH                                              
 =1.000H2O           +1.000CO2           +1.000HO2           +             
 +                   +                   +                   +             
@@ -714,12 +730,6 @@ A  453 2.70E-12  0.0E+00    350 1 A   0.00     0.     0.
 +                   +                   +                   +             
 +                   +                   +                   +
 A  453 2.70E-12  0.0E+00    350 0     0.00     0.     0.         
-      MVN2          +     NO                                              
-=1.900NO2           +0.300HO2           +0.300CH2O          +0.600MCO3    
-+0.600GLYC          +0.300MGLY          +0.100HNO3          +             
-+                   +                   +                   +             
-+                   +                   +                   +
-A  453 2.70E-12  0.0E+00    350 0     0.00     0.     0.         
       MAN2          +     NO                                              
 =2.000NO2           +1.000CH2O          +1.000MGLY          +             
 +                   +                   +                   +             
@@ -755,7 +765,7 @@ A  456 1.60E-12  0.0E+00      0 0     0.00     0.     0.
 +                   +                   +                   +             
 +                   +                   +                   +             
 +                   +                   +                   +
-A  459 4.20E-14  0.0E+00    855 0     0.00     0.     0.         
+D  459 4.20E-14  0.0E+00    855 0     0.00     0.     0.         
       ACTA          +     OH                                              
 =1.000MO2           +1.000CO2           +1.000H2O           +             
 +                   +                   +                   +             
@@ -782,19 +792,6 @@ A  465 9.00E-29  0.0E+00  14000 0 E   0.00     0.     0.
 +                   +                   +                   +
 A  442 9.00E-28  8.9E+00      0 1 P   0.60     0.     0.         
        7.70E-12  0.2E+00      0 0     0.00     0.     0.         
-      GCO3          +     NO2                 M                               
-=1.000GPAN          +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +
-A  465 9.00E-29  0.0E+00  14000 0 E   0.00     0.     0.         
-      GPAN          +                                                     
-=1.000GCO3          +1.000NO2           +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +
-A  442 9.00E-28  8.9E+00      0 1 P   0.60     0.     0.         
-       7.70E-12  0.2E+00      0 0     0.00     0.     0.         
       MAO3          +     NO2                 M                           
 =1.000PMN           +                   +                   +             
 +                   +                   +                   +             
@@ -803,19 +800,6 @@ A  442 9.00E-28  8.9E+00      0 1 P   0.60     0.     0.
 A  465 9.00E-29  0.0E+00  14000 0 E   0.00     0.     0.         
       PMN           +                                                     
 =1.000MAO3          +1.000NO2           +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +
-A  442 9.00E-28  8.9E+00      0 1 P   0.60     0.     0.         
-       7.70E-12  0.2E+00      0 0     0.00     0.     0.         
-      GLCO3         +     NO2                 M                            
-=1.000GLPAN         +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +
-A  465 9.00E-29  0.0E+00  14000 0 E   0.00     0.     0.         
-      GLPAN         +                                                     
-=1.000GLCO3         +1.000NO2           +                   +             
 +                   +                   +                   +             
 +                   +                   +                   +             
 +                   +                   +                   +
@@ -834,12 +818,6 @@ A  466 6.70E-12  0.0E+00    340 0     0.00     0.     0.
 A  466 6.70E-12  0.0E+00    340 0     0.00     0.     0.       
       MAO3          +     NO                                              
 =1.000NO2           +1.000CH2O          +1.000MCO3          +             
-+                   +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +
-A  466 8.10E-12  0.0E+00    270 0     0.00     0.     0.         
-      GLCO3         +     NO                                              
-=1.000NO2           +1.000HO2           +1.000CO            +             
 +                   +                   +                   +             
 +                   +                   +                   +             
 +                   +                   +                   +
@@ -934,12 +912,6 @@ A  472 7.40E-13  0.0E+00    700 0     0.00     0.     0.
 +                   +                   +                   +             
 +                   +                   +                   +
 A  472 7.40E-13  0.0E+00    700 0     0.00     0.     0.         
-      MVN2          +     HO2                                             
-=1.000ISNP          +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +
-A  472 7.40E-13  0.0E+00    700 0     0.00     0.     0.         
       MAN2          +     HO2                                             
 =1.000ISNP          +                   +                   +             
 +                   +                   +                   +             
@@ -987,49 +959,49 @@ A  478 8.37E-14  0.0E+00      0 0     0.00     0.     0.
 +0.160ALD2          +0.070RCHO          +0.030A3O2          +0.090B3O2    
 +0.160ETO2          +0.250MEK           +0.750CH2O          +0.250MOH     
 +0.250ROH           +0.500HO2           +                   +
-A  478 8.37E-14  0.0E+00      0 0     0.00     0.     0.         
+A  470 8.37E-14  0.0E+00      0 0     0.00     0.     0.         
       R4N1          +     MO2                                             
 =1.000NO2           +0.200CH2O          +0.380ALD2          +0.290RCHO    
 +0.150R4O2          +0.250RCHO          +0.750CH2O          +0.250MOH     
 +0.250ROH           +0.500HO2           +                   +             
 +                   +                   +                   +
-A  478 7.50E-13  0.0E+00    500 0     0.00     0.     0.         
+A  471 7.50E-13  0.0E+00    500 0     0.00     0.     0.         
       ATO2          +     MO2                                             
 =0.300HO2           +0.300CH2O          +0.300MCO3          +0.200HAC     
 +0.200CH2O          +0.500MGLY          +0.500MOH           +             
 +                   +                   +                   +             
 +                   +                   +                   +
-A  478 8.37E-14  0.0E+00      0 0     0.00     0.     0.         
+A  472 8.37E-14  0.0E+00      0 0     0.00     0.     0.         
       KO2           +     MO2                                             
 =0.500ALD2          +0.500MCO3          +0.250MEK           +0.750CH2O    
 +0.250MOH           +0.250ROH           +0.500HO2           +             
 +                   +                   +                   +             
 +                   +                   +                   +
-A  478 8.37E-14  0.0E+00      0 0     0.00     0.     0.         
+A  473 8.37E-14  0.0E+00      0 0     0.00     0.     0.         
       RIO2          +     MO2                                             
 =0.420HO2           +0.350CH2O          +0.200MVK           +0.140MACR    
 +0.070RIO1          +0.060IALD          +0.250MEK           +0.750CH2O    
 +0.250MOH           +0.250ROH           +0.500HO2           +             
 +                   +                   +                   +
-A  478 8.37E-14  0.0E+00      0 0     0.00     0.     0.         
+A  474 8.37E-14  0.0E+00      0 0     0.00     0.     0.         
       RIO1          +     MO2                                             
 =0.500IALD          +0.500HO2           +0.380CH2O          +0.250MEK     
 +0.750CH2O          +0.250MOH           +0.250ROH           +0.500HO2     
 +                   +                   +                   +             
 +                   +                   +                   +
-A  478 8.37E-14  0.0E+00      0 0     0.00     0.     0.         
+A  475 8.37E-14  0.0E+00      0 0     0.00     0.     0.         
       IAO2          +     MO2                                             
 =0.500HO2           +0.330CO            +0.090H2            +0.180HAC     
 +0.130GLYC          +0.290MGLY          +0.250MEK           +0.950CH2O    
 +0.250MOH           +0.250ROH           +0.500HO2           +             
 +                   +                   +                   +
-A  478 8.37E-14  0.0E+00      0 0     0.00     0.     0.         
+A  476 8.37E-14  0.0E+00      0 0     0.00     0.     0.         
       ISN1          +     MO2                                             
 =1.000NO2           +0.500GLYC          +0.500HAC           +0.250RCHO    
 +0.750CH2O          +0.250MOH           +0.250ROH           +0.500HO2     
 +                   +                   +                   +             
 +                   +                   +                   +
-A  478 8.37E-14  0.0E+00      0 0     0.00     0.     0.         
+A  477 8.37E-14  0.0E+00      0 0     0.00     0.     0.         
       VRO2          +     MO2                                             
 =0.140HO2           +0.140CH2O          +0.360MCO3          +0.360GLYC    
 +0.140MGLY          +0.250MEK           +0.750CH2O          +0.250MOH     
@@ -1040,13 +1012,7 @@ A  478 8.37E-14  0.0E+00      0 0     0.00     0.     0.
 =1.000HAC           +0.850CH2O          +1.150HO2           +0.150CO      
 +                   +                   +                   +             
 +                   +                   +                   +             
-+                   +                   +                   +
-A  478 8.37E-14  0.0E+00      0 0     0.00     0.     0.         
-      MVN2          +     MO2                                             
-=1.000NO2           +0.500CH2O          +0.250MCO3          +0.250MGLY    
-+0.250HO2           +0.250RCHO          +0.750CH2O          +0.250MOH     
-+0.250ROH           +0.500HO2           +                   +             
-+                   +                   +                   +
++                   +                   +                   +             
 A  478 8.37E-14  0.0E+00      0 0     0.00     0.     0.         
       MAN2          +     MO2                                             
 =1.000NO2           +0.500CH2O          +0.500MGLY          +0.250RCHO    
@@ -1071,7 +1037,7 @@ A  478 8.37E-14  0.0E+00      0 0     0.00     0.     0.
 +0.750CH2O          +0.250MOH           +0.250ROH           +0.500HO2     
 +                   +                   +                   +             
 +                   +                   +                   +
-A  479 6.90E-12  0.0E+00   -230 0     0.00     0.     0.         
+D  479 6.90E-12  0.0E+00   -230 0     0.00     0.     0.         
       EOH           +     OH                                              
 =1.000HO2           +1.000ALD2          +                   +             
 +                   +                   +                   +             
@@ -1134,12 +1100,6 @@ A  491 4.30E-13  0.0E+00   1040 0     0.00     0.     0.
 A  491 4.30E-13  0.0E+00   1040 0     0.00     0.     0.         
       MAO3          +     HO2                                             
 =0.300RCOOH         +0.300O3            +0.700MAOP          +             
-+                   +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +
-A  491 4.30E-13  0.0E+00   1040 0     0.00     0.     0.         
-      GLCO3         +     HO2                                             
-=0.300RCOOH         +0.300O3            +0.700GLP           +             
 +                   +                   +                   +             
 +                   +                   +                   +             
 +                   +                   +                   +
@@ -1276,12 +1236,6 @@ A  621 3.15E-12  0.0E+00   -450 0     0.00     0.     0.
 +                   +                   +                   +             
 +                   +                   +                   +             
 +                   +                   +                   +
-D  625 2.00E-14  0.0E+00      0 0     0.00     0.     0.         
-      MVK           +     NO3                                             
-=1.000MVN2          +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +
 A  628 2.30E-15  0.0E+00      0 0     0.00     0.     0.         
       MACR          +     NO3                                             
 =1.000MAN2          +                   +                   +             
@@ -1312,12 +1266,6 @@ A  632 1.68E-12  0.0E+00    500 0     0.00     0.     0.
 +                   +                   +                   +             
 +                   +                   +                   +             
 +                   +                   +                   +
-A  632 1.68E-12  0.0E+00    500 0     0.00     0.     0.         
-      GLCO3         +     MO2                                             
-=1.000CH2O          +2.000HO2           +1.000CO            +             
-+                   +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +
 A  633 1.87E-13  0.0E+00    500 0     0.00     0.     0.         
       RCO3          +     MO2                                             
 =1.000RCOOH         +1.000CH2O          +                   +             
@@ -1332,12 +1280,6 @@ A  633 1.87E-13  0.0E+00    500 0     0.00     0.     0.
 +                   +                   +                   +
 A  633 1.87E-13  0.0E+00    500 0     0.00     0.     0.         
       MAO3          +     MO2                                             
-=1.000RCOOH         +1.000CH2O          +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +
-A  633 1.87E-13  0.0E+00    500 0     0.00     0.     0.         
-      GLCO3         +     MO2                                             
 =1.000RCOOH         +1.000CH2O          +                   +             
 +                   +                   +                   +             
 +                   +                   +                   +             
@@ -1397,12 +1339,6 @@ A  640 3.80E-12  0.0E+00    200 0     0.00     0.     0.
 +                   +                   +                   +             
 +                   +                   +                   +
 A  640 3.80E-12  0.0E+00    200 0     0.00     0.     0.         
-      GLP           +     OH                                              
-=0.500OH            +0.500GLCO3         +0.500CO            +             
-+                   +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +
-A  640 3.80E-12  0.0E+00    200 0     0.00     0.     0.         
       RIP           +     OH                                              
 =0.509IALD          +0.509OH            +0.491RIO2          +             
 +                   +                   +                   +             
@@ -1447,12 +1383,6 @@ A  643 3.80E-12  0.0E+00    200 0     0.00     0.     0.
 A  644 1.40E-18  0.0E+00      0 0     0.00     0.     0.         
       C2H6          +     NO3                                             
 =1.000ETO2          +1.000HNO3          +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +
-A  646 8.00E-13  0.0E+00   -1000 0     0.00     0.     0.         
-      MNO3          +     OH                                              
-=1.000CH2O          +1.000NO2           +                   +             
 +                   +                   +                   +             
 +                   +                   +                   +             
 +                   +                   +                   +
@@ -1553,12 +1483,6 @@ A  718 1.68E-12  0.0E+00    500 0     0.00     0.     0.
 +                   +                   +                   +             
 +                   +                   +                   +
 A  718 1.68E-12  0.0E+00    500 0     0.00     0.     0.         
-      MVN2          +     MCO3                                            
-=1.000MO2           +1.000NO2           +1.000CH2O          +0.500MCO3    
-+0.500MGLY          +0.500HO2           +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +
-A  718 1.68E-12  0.0E+00    500 0     0.00     0.     0.         
       MAN2          +     MCO3                                            
 =1.000MO2           +1.000NO2           +1.000CH2O          +1.000MGLY    
 +                   +                   +                   +             
@@ -1637,12 +1561,6 @@ A  719 1.87E-13  0.0E+00    500 0     0.00     0.     0.
 +                   +                   +                   +             
 +                   +                   +                   +
 A  719 1.87E-13  0.0E+00    500 0     0.00     0.     0.         
-      MVN2          +     MCO3                                            
-=1.000RCHO          +1.000ACTA          +1.000NO2           +             
-+                   +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +
-A  719 1.87E-13  0.0E+00    500 0     0.00     0.     0.         
       MAN2          +     MCO3                                            
 =1.000RCHO          +1.000ACTA          +1.000NO2           +             
 +                   +                   +                   +             
@@ -1693,12 +1611,6 @@ A  722 2.50E-12  0.0E+00    500 0     0.00     0.     0.
 A  722 2.50E-12  0.0E+00    500 0     0.00     0.     0.         
       MAO3          +     MCO3                                            
 =1.000MO2           +1.000CH2O          +1.000MCO3          +             
-+                   +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +
-A  722 2.50E-12  0.0E+00    500 0     0.00     0.     0.         
-      GLCO3         +     MCO3                                            
-=1.000MO2           +1.000HO2           +1.000CO            +             
 +                   +                   +                   +             
 +                   +                   +                   +             
 +                   +                   +                   +
@@ -2040,12 +1952,6 @@ A  475 3.01E+01   0.0         0 0     0.00     0.     0.
 +                   +                   +                   +             
 +                   +                   +                   +             
 +                   +                   +                   +
-A  484 3.01E+01   0.0         0 0     0.00     0.     0.         
-      MNO3          +                                                     
-=1.000CH2O          +1.000H2O           +1.000NO2           +             
-+                   +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +
 A  510 3.01E+01   0.0         0 0     0.00     0.     0.         
       GLYC          +                                                     
 =1.000CH2O          +2.000HO2           +1.000CO            +             
@@ -2163,12 +2069,6 @@ A  642 2.41E+01   0.0         0 0     0.00     0.     0.
 A  642 2.41E+01   0.0         0 0     0.00     0.     0.         
       GP            +                                                     
 =1.000OH            +1.000HO2           +1.000CH2O          +             
-+                   +                   +                   +             
-+                   +                   +                   +             
-+                   +                   +                   +
-A  642 2.41E+01   0.0         0 0     0.00     0.     0.         
-      GLP           +                                                     
-=1.000OH            +1.000HO2           +1.000CO            +             
 +                   +                   +                   +             
 +                   +                   +                   +             
 +                   +                   +                   +
