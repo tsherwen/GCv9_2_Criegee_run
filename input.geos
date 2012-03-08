@@ -1,4 +1,4 @@
-GEOS-CHEM SIMULATION v9-01-02: GEOS-5 NOx-Ox-HC-Aerosol simulation (43 tracers)
+GEOS-CHEM SIMULATION v9-01-03: GEOS-5 NOx-Ox-HC-Aerosol simulation (43 tracers)
 ------------------------+------------------------------------------------------
 %%% SIMULATION MENU %%% :
 Start YYYYMMDD, HHMMSS  : 20050701 000000
@@ -8,11 +8,12 @@ Input restart file      : restart.4x5.geos5.YYYYMMDDhh
 Make new restart file?  : T
 Output restart file(s)  : restart.4x5.geos5.YYYYMMDDhh
 Root data directory     : /as/group/geos/data/GEOS_4x5/
- => GCAP   subdirectory : AGRID/YYYY/MM/
- => GEOS-3 subdirectory : GEOS_3/YYYY/MM/
- => GEOS-4 subdirectory : GEOS_4_v4/YYYY/MM/
- => GEOS-5 subdirectory : GEOS_5/YYYY/MM/
- => MERRA  subdirectory : MERRA/YYYY/MM/
+ => GCAP       subdir   : AGRID/YYYY/MM/
+ => GEOS-3     subdir   : GEOS_3/YYYY/MM/
+ => GEOS-4     subdir   : GEOS_4_v4/YYYY/MM/
+ => GEOS-5     subdir   : GEOS_5/YYYY/MM/
+ => GEOS-5.7.x subdir   : GEOS_5.7/YYYY/MM/
+ => MERRA      subdir   : MERRA/YYYY/MM/
 Dir w/ 1x1 emissions etc: /as/group/geos/data/GEOS_1x1/
 Temporary directory     : ./
 Unzip met fields?       : F
