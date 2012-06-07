@@ -23,6 +23,11 @@
 #  SCCS version information: @(#)photol.d	1.2 5/11/94
 #
 # !REVISION HISTORY: 
+#  27 Dec 2011 (v9-01-03m)
+#  -----------------------
+#     Update from J. Parrella
+#     (1) Add photolysis reactions for bromine chemistry
+#
 #  07 Nov 2011 (v9-01-03) 
 #  ----------------------
 #     Update from F. Paulot:
@@ -118,6 +123,13 @@
    51 VRP        PHOTON     OH  HO2  CH2O  MCO3  GLYC  MGLY 0.00E+00  0.00    100.0  ROOH
    52 MRP        PHOTON     OH  HO2  MGLY  HAC  CO  CH2O    0.00E+00  0.00    100.0  ROOH 
    53 MAOP       PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH
+   56 Br2        PHOTON     Br         Br                   0.00E+00  0.00    100.0  Br2
+   57 BrO        PHOTON     Br         O(3P)                0.00E+00  0.00    100.0  BrO
+   58 HOBr       PHOTON     Br         OH                   0.00E+00  0.00    100.0  HOBr
+   59 BrNO3      PHOTON     Br         NO3                  0.00E+00  0.00     85.0  BrNO3
+   60 BrNO3      PHOTON     BrO        NO2                  0.00E+00  0.00     15.0  BrNO3
+   61 BrNO2      PHOTON     Br         NO2                  0.00E+00  0.00    100.0  BrNO2
+   62 CHBr3      PHOTON     Br         Br         Br        0.00E+00  0.00    100.0  CHBr3
  9999                                                       0.00E-00  0.00      0.0         
 
 
