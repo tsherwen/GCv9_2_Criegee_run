@@ -1,12 +1,13 @@
 GEOS-Chem Support Team
 geos-chem-support@as.harvard.edu
-28 Nov 2011
+16 Jul 2012
 
 
 This directory contains input files for the standard simulation as of
-the GEOS-Chem version 9-01-02.
+the GEOS-Chem version 9-01-03.
 
 This set of input files was used for the 1-month benchmark.
 
-The restart file is to be used with Linoz since the Ox tracer comes from a
-tagged Ox simulation spinned-up with Linoz.
+The restart file contains the tracer concentrations from the end of a 10+ year
+spinup simulation using Lee Murray's linearized stratospheric chemistry scheme
+updates.
