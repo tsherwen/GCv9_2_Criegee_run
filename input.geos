@@ -18,7 +18,6 @@ Temporary directory     : ./
 Unzip met fields?       : F
 Wait for met fields?    : F
 Use variable tropopause?: T
-Use LINOZ strat chem?   : T
 Global offsets I0, J0   : 0 0
 ------------------------+------------------------------------------------------
 %%% TRACER MENU %%%     : 
@@ -85,7 +84,6 @@ Turn on Transport       : T
  => Fill Negative Values: T 
  => IORD, JORD, KORD    : 3  3  7
 Transport Timestep [min]: 30   
-Use strat O3/NOy BC's   : T
 ------------------------+------------------------------------------------------
 %%% CONVECTION MENU %%% :
 Turn on Cloud Conv?     : T
@@ -145,9 +143,9 @@ Use MODIS-derived LAI?  : T
 Use historical emiss?   : F
  => What decade?        : 2000
 Bromine switches        :---
- => Use Warwick VSLs ?  : T
- => Use seasalt Br2 ?   : T
- => 1ppt MBL BRO Sim. ? : F
+ => Use Warwick VSLS?   : T
+ => Use seasalt Br2?    : T
+ => 1ppt MBL BRO Sim.?  : F
  => Bromine scaling     : 1
 ------------------------+------------------------------------------------------
 %%% AEROSOL MENU %%%    :
@@ -168,6 +166,8 @@ Turn on Wet Deposition? : T
 ------------------------+------------------------------------------------------
 %%% CHEMISTRY MENU %%%  : 
 Turn on Chemistry?      : T
+Use linear. strat. chem?: T
+ => Use Linoz for O3?   : T
 Chemistry Timestep [min]: 60
 Read and save CSPEC_FULL: F
 USE solver coded by KPP : T
@@ -312,7 +312,7 @@ LMIN, LMAX of region    :   1   1
 ------------------------+------------------------------------------------------
 %%% ND63 MENU %%%       :
 Turn on ND63 diagnostic : F
-Inst 3-D timeser. file  : paranox_tsYYYYMMDD.bpch
+Inst 3-D timeser. file  : paranox_ts.YYYYMMDD.bpch
 Tracers to include      : 1
 Frequency [min]         : 120
 IMIN, IMAX of region    :  70  30
@@ -351,6 +351,8 @@ Over Europe?            : F
 TPCORE EU BC directory  : BC_2x25_EU/
 Over China?             : F
 TPCORE CH BC directory  : BC_2x25_CH/
+Over SEAC4RS region?    : F
+TPCORE SEAC4RS BC dir   : BC_2x25_SEAC4RS/
 Over Custom Region?     : F
 TPCORE BC directory     : BC_2x25/
 BC timestep [min]       : 180
