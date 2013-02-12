@@ -22,13 +22,22 @@
 #  Release date:  22 November 1993
 #  SCCS version information: @(#)photol.d	1.2 5/11/94
 #
-# !REVISION HISTORY: 
+# !REVISION HISTORY:
+#  17 Jan 2013 (v9-02f)
+#  -----------------------
+#     Update from B. Henderson, J. Mao, and E. Marais (7/18/11):
+#     (1) Included the photolysis reaction of O3 (Line 56):
+#        O3 + hv --> O2 + O(1D) (from JPL 10-6 document)
+#
+#     Update from E. Browne:
+#     (1) Add photolysis reactions for MPN chemistry
+#
 #  27 Dec 2011 (v9-01-03m)
 #  -----------------------
-#     Update from J. Parrella
+#     Update from J. Parrella:
 #     (1) Add photolysis reactions for bromine chemistry
 #
-#  07 Nov 2011 (v9-01-03) 
+#  07 Nov 2011 (v9-01-03a) 
 #  ----------------------
 #     Update from F. Paulot:
 #     (1) I have physically removed GLCO3, GLP, GPAN, MNO3, ISNO3, MNO3, 
@@ -123,13 +132,16 @@
    51 VRP        PHOTON     OH  HO2  CH2O  MCO3  GLYC  MGLY 0.00E+00  0.00    100.0  ROOH
    52 MRP        PHOTON     OH  HO2  MGLY  HAC  CO  CH2O    0.00E+00  0.00    100.0  ROOH 
    53 MAOP       PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH
-   56 Br2        PHOTON     Br         Br                   0.00E+00  0.00    100.0  Br2
-   57 BrO        PHOTON     Br         O(3P)                0.00E+00  0.00    100.0  BrO
-   58 HOBr       PHOTON     Br         OH                   0.00E+00  0.00    100.0  HOBr
-   59 BrNO3      PHOTON     Br         NO3                  0.00E+00  0.00     85.0  BrNO3
-   60 BrNO3      PHOTON     BrO        NO2                  0.00E+00  0.00     15.0  BrNO3
-   61 BrNO2      PHOTON     Br         NO2                  0.00E+00  0.00    100.0  BrNO2
-   62 CHBr3      PHOTON     Br         Br         Br        0.00E+00  0.00    100.0  CHBr3
+   54 Br2        PHOTON     Br         Br                   0.00E+00  0.00    100.0  Br2
+   55 BrO        PHOTON     Br         O(3P)                0.00E+00  0.00    100.0  BrO
+   56 HOBr       PHOTON     Br         OH                   0.00E+00  0.00    100.0  HOBr
+   57 BrNO3      PHOTON     Br         NO3                  0.00E+00  0.00     85.0  BrNO3
+   58 BrNO3      PHOTON     BrO        NO2                  0.00E+00  0.00     15.0  BrNO3
+   59 BrNO2      PHOTON     Br         NO2                  0.00E+00  0.00    100.0  BrNO2
+   60 CHBr3      PHOTON     Br         Br         Br        0.00E+00  0.00    100.0  CHBr3
+   61 O3         PHOTON     O2         O(1D)                0.00E+00  0.00    100.0  O3_1d
+   62 MPN        PHOTON     HO2        NO3        HCHO      0.00E+00  0.00      5.0  MPN
+   63 MPN        PHOTON     MO2        NO2                  0.00E+00  0.00     95.0  MPN
  9999                                                       0.00E-00  0.00      0.0         
 
 
