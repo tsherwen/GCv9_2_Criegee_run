@@ -1,5 +1,5 @@
 #==============================================================================
-# diaginfo.dat: Created by GEOS-CHEM at 2012/07/11 11:09
+# diaginfo.dat: Created by GEOS-CHEM at 2013/03/20 17:13
 #
 # ****** CUSTOMIZED FOR NOx-Ox-Hydrocarbon-Aerosol SIMULATION *****
 #
@@ -112,6 +112,30 @@
    33000 ORGC-SR$                                 Organic Carbon emission                 
    33000 SOAGM=$                                  Dicarbonyl SOA production               
    34000 HG-SRCE                                  Hg emissions                            
+   61000 HG0-ANTH                                 Hg(0) Anthro Emissions                  
+   62000 HG0-AQUA                                 Hg(0) Ocean Mass                        
+   63000 HG0-RECY                                 Hg(0) Land Prompt Recycling             
+   64000 HGNET-OC                                 Hg(0) Net Ocean Emissions               
+   65000 HG0-GEOG                                 Hg(0) Geogenic Emissions                
+   66000 HG2-ANTH                                 Hg(II) Anthro Emissions                 
+   67000 HG2-AQUA                                 Hg(II) Ocean Mass                       
+   68000 HG2-SINK                                 Hg(II) Sinking                          
+   69000 HGP-ANTH                                 Hg(P) Anthro Emissions                  
+   70000 HGT-AQUA                                 Hg Total Ocean Mass                     
+   71000 HGP-AQUA                                 Hg(P) Ocean Mass                        
+   72000 HGP-CONV                                 Hg(II) Aqeous Conversion to Particle    
+   73000 HG0-BURN                                 Hg(0) Biomass Burning Emissions         
+   74000 HG0-VEGT                                 Hg(0) Veg Transp. Emissions             
+   75000 HG0-SOIL                                 Hg(0) Soil Emissions                    
+   76000 HG0-FXUP                                 Hg(0) Gross Ocean Up Flux               
+   77000 HG0-FXDN                                 Hg(0) Gross Ocean Down Flux             
+   78000 HG0-SNOW                                 Hg(0) Snow Emissions                    
+   79000 HG-NETOX                                 Hg(0) to Hg(II) Net Oxidation           
+   80000 HG2-OXOH                                 Hg(0) Oxidation to Hg(II) by OH         
+   81000 HG2-OXO3                                 Hg(0) Oxidation to Hg(II) by O3         
+   82000 HG2-SALT                                 Hg(II) Loss by Sea Salt                 
+   83000 HG2-SSRX                                 Hg(0) Sea Salt Reaction Rate            
+   84000 HG2-OXBR                                 Hg(0) Oxidation to Hg(II) by Br         
    35000 PL-HG2-$                                 Prod / loss of Hg2                      
    36000 DRYD-FLX                                 Drydep fluxes                           
    37000 DRYD-VEL                                 Drydep velocities                       
@@ -132,3 +156,6 @@
    50000 CH4-EMIS                                 CH4 Emissions                           
    51000 WET-FRAC                                 Wetland Fraction                        
    59000 SHIP-$$$                                 Ship diagnostics                        
+   60000 RST-SOIL                                 Soil NOx restart file                   
+   52000 PG-SRCE                                  POPs Emissions                          
+   53000 PG-PP-$                                  POP partitioning/oxidation              

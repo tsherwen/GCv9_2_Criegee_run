@@ -1,5 +1,5 @@
 #==============================================================================
-# tracerinfo.dat: Created by GEOS-CHEM at 2012/07/11 11:09
+# tracerinfo.dat: Created by GEOS-CHEM at 2013/03/20 17:13
 #
 # ****** CUSTOMIZED FOR NOx-Ox-Hydrocarbon-Aerosol SIMULATION *****
 #
@@ -74,7 +74,17 @@ BrNO3    BrNO3 tracer                   1.420E-01  1       50 1.000E+09 ppbv
 CHBr3    CHBr3 tracer                   2.530E-01  1       51 1.000E+09 ppbv
 CH2Br2   CH2Br2 tracer                  1.740E-01  1       52 1.000E+09 ppbv
 CH3Br    CH3Br tracer                   9.500E-02  1       53 1.000E+09 ppbv
-O3       Pure O3 tracer                 4.800E-02  1       54 1.000E+09 ppbv
+MPN      MPN tracer                     9.300E-02  1       54 1.000E+09 ppbv
+ISOPN    ISOPN tracer                   1.470E-01  1       55 1.000E+09 ppbv
+MOBA     MOBA tracer                    1.140E-01  1       56 1.000E+09 ppbv
+PROPNN   PROPNN tracer                  1.090E-01  1       57 1.000E+09 ppbv
+HAC      HAC tracer                     7.400E-02  1       58 1.000E+09 ppbv
+GLYC     GLYC tracer                    6.000E-02  1       59 1.000E+09 ppbv
+MMN      MMN tracer                     1.490E-01  1       60 1.000E+09 ppbv
+RIP      RIP tracer                     1.180E-01  1       61 1.000E+09 ppbv
+IEPOX    IEPOX tracer                   1.180E-01  1       62 1.000E+09 ppbv
+MAP      MAP tracer                     7.600E-02  1       63 1.000E+09 ppbv
+O3       Pure O3 tracer                 4.800E-02  1       64 1.000E+09 ppbv
 #==============================================================================
 # GEOS-CHEM tracers [molec/cm2/s]
 #==============================================================================
@@ -131,7 +141,17 @@ BrNO3    BrNO3 tracer                   1.420E-01  1     1050 1.000E+00 molec/cm
 CHBr3    CHBr3 tracer                   2.530E-01  1     1051 1.000E+00 molec/cm2/s
 CH2Br2   CH2Br2 tracer                  1.740E-01  1     1052 1.000E+00 molec/cm2/s
 CH3Br    CH3Br tracer                   9.500E-02  1     1053 1.000E+00 molec/cm2/s
-O3       Pure O3 tracer                 4.800E-02  1     1054 1.000E+00 molec/cm2/s
+MPN      MPN tracer                     9.300E-02  1     1054 1.000E+00 molec/cm2/s
+ISOPN    ISOPN tracer                   1.470E-01  1     1055 1.000E+00 molec/cm2/s
+MOBA     MOBA tracer                    1.140E-01  1     1056 1.000E+00 molec/cm2/s
+PROPNN   PROPNN tracer                  1.090E-01  1     1057 1.000E+00 molec/cm2/s
+HAC      HAC tracer                     7.400E-02  1     1058 1.000E+00 molec/cm2/s
+GLYC     GLYC tracer                    6.000E-02  1     1059 1.000E+00 molec/cm2/s
+MMN      MMN tracer                     1.490E-01  1     1060 1.000E+00 molec/cm2/s
+RIP      RIP tracer                     1.180E-01  1     1061 1.000E+00 molec/cm2/s
+IEPOX    IEPOX tracer                   1.180E-01  1     1062 1.000E+00 molec/cm2/s
+MAP      MAP tracer                     7.600E-02  1     1063 1.000E+00 molec/cm2/s
+O3       Pure O3 tracer                 4.800E-02  1     1064 1.000E+00 molec/cm2/s
 #==============================================================================
 # GEOS-CHEM tracers [molec/cm2]
 #==============================================================================
@@ -188,7 +208,17 @@ BrNO3    BrNO3 tracer                   1.420E-01  1     2050 1.000E+00 molec/cm
 CHBr3    CHBr3 tracer                   2.530E-01  1     2051 1.000E+00 molec/cm2
 CH2Br2   CH2Br2 tracer                  1.740E-01  1     2052 1.000E+00 molec/cm2
 CH3Br    CH3Br tracer                   9.500E-02  1     2053 1.000E+00 molec/cm2
-O3       Pure O3 tracer                 4.800E-02  1     2054 1.000E+00 molec/cm2
+MPN      MPN tracer                     9.300E-02  1     2054 1.000E+00 molec/cm2
+ISOPN    ISOPN tracer                   1.470E-01  1     2055 1.000E+00 molec/cm2
+MOBA     MOBA tracer                    1.140E-01  1     2056 1.000E+00 molec/cm2
+PROPNN   PROPNN tracer                  1.090E-01  1     2057 1.000E+00 molec/cm2
+HAC      HAC tracer                     7.400E-02  1     2058 1.000E+00 molec/cm2
+GLYC     GLYC tracer                    6.000E-02  1     2059 1.000E+00 molec/cm2
+MMN      MMN tracer                     1.490E-01  1     2060 1.000E+00 molec/cm2
+RIP      RIP tracer                     1.180E-01  1     2061 1.000E+00 molec/cm2
+IEPOX    IEPOX tracer                   1.180E-01  1     2062 1.000E+00 molec/cm2
+MAP      MAP tracer                     7.600E-02  1     2063 1.000E+00 molec/cm2
+O3       Pure O3 tracer                 4.800E-02  1     2064 1.000E+00 molec/cm2
 #==============================================================================
 # GEOS-CHEM tracers [kg/s]
 #==============================================================================
@@ -245,7 +275,17 @@ BrNO3    BrNO3 tracer                   1.420E-01  1     3050 1.000E+00 kg/s
 CHBr3    CHBr3 tracer                   2.530E-01  1     3051 1.000E+00 kg/s
 CH2Br2   CH2Br2 tracer                  1.740E-01  1     3052 1.000E+00 kg/s
 CH3Br    CH3Br tracer                   9.500E-02  1     3053 1.000E+00 kg/s
-O3       Pure O3 tracer                 4.800E-02  1     3054 1.000E+00 kg/s
+MPN      MPN tracer                     9.300E-02  1     3054 1.000E+00 kg/s
+ISOPN    ISOPN tracer                   1.470E-01  1     3055 1.000E+00 kg/s
+MOBA     MOBA tracer                    1.140E-01  1     3056 1.000E+00 kg/s
+PROPNN   PROPNN tracer                  1.090E-01  1     3057 1.000E+00 kg/s
+HAC      HAC tracer                     7.400E-02  1     3058 1.000E+00 kg/s
+GLYC     GLYC tracer                    6.000E-02  1     3059 1.000E+00 kg/s
+MMN      MMN tracer                     1.490E-01  1     3060 1.000E+00 kg/s
+RIP      RIP tracer                     1.180E-01  1     3061 1.000E+00 kg/s
+IEPOX    IEPOX tracer                   1.180E-01  1     3062 1.000E+00 kg/s
+MAP      MAP tracer                     7.600E-02  1     3063 1.000E+00 kg/s
+O3       Pure O3 tracer                 4.800E-02  1     3064 1.000E+00 kg/s
 #==============================================================================
 # GEOS-CHEM tracers [kg]
 #==============================================================================
@@ -302,7 +342,24 @@ BrNO3    BrNO3 tracer                   1.420E-01  1     4050 1.000E+00 kg
 CHBr3    CHBr3 tracer                   2.530E-01  1     4051 1.000E+00 kg
 CH2Br2   CH2Br2 tracer                  1.740E-01  1     4052 1.000E+00 kg
 CH3Br    CH3Br tracer                   9.500E-02  1     4053 1.000E+00 kg
-O3       Pure O3 tracer                 4.800E-02  1     4054 1.000E+00 kg
+MPN      MPN tracer                     9.300E-02  1     4054 1.000E+00 kg
+ISOPN    ISOPN tracer                   1.470E-01  1     4055 1.000E+00 kg
+MOBA     MOBA tracer                    1.140E-01  1     4056 1.000E+00 kg
+PROPNN   PROPNN tracer                  1.090E-01  1     4057 1.000E+00 kg
+HAC      HAC tracer                     7.400E-02  1     4058 1.000E+00 kg
+GLYC     GLYC tracer                    6.000E-02  1     4059 1.000E+00 kg
+MMN      MMN tracer                     1.490E-01  1     4060 1.000E+00 kg
+RIP      RIP tracer                     1.180E-01  1     4061 1.000E+00 kg
+IEPOX    IEPOX tracer                   1.180E-01  1     4062 1.000E+00 kg
+MAP      MAP tracer                     7.600E-02  1     4063 1.000E+00 kg
+O3       Pure O3 tracer                 4.800E-02  1     4064 1.000E+00 kg
+#==============================================================================
+# Quantities for Soil NOx restart file
+#==============================================================================
+P_DRY    P_DRY                          1.000E+00  1    60001 1.000E+00 hours
+PFACTOR  PFACTOR                        1.000E+00  1    60002 1.000E+00 unitless
+GWET_PRV GWET_PRV                       1.000E+00  1    60003 1.000E+00 unitless
+N_RESVR  N_RESVR                        1.000E+00  1    60004 1.000E+00 ng N/m2
 #==============================================================================
 # ND07 diagnostic quantities
 #==============================================================================
@@ -415,6 +472,7 @@ PANdf    PAN drydep flux                1.210E-01  1    36003 1.000E+00 molec/cm
 HNO3df   HNO3 drydep flux               6.300E-02  1    36007 1.000E+00 molec/cm2/s
 H2O2df   H2O2 drydep flux               3.400E-02  1    36008 1.000E+00 molec/cm2/s
 ACETdf   ACET drydep flux               1.200E-02  3    36009 1.000E+00 molec/cm2/s
+ALD2df   ALD2 drydep flux               1.200E-02  2    36011 1.000E+00 molec/cm2/s
 MVKdf    MVK drydep flux                7.000E-02  1    36013 1.000E+00 molec/cm2/s
 MACRdf   MACR drydep flux               7.000E-02  1    36014 1.000E+00 molec/cm2/s
 PMNdf    PMN drydep flux                1.470E-01  1    36015 1.000E+00 molec/cm2/s
@@ -444,12 +502,23 @@ Br2df    Br2 drydep flux                1.600E-01  1    36044 1.000E+00 molec/cm
 HOBrdf   HOBr drydep flux               9.700E-02  1    36047 1.000E+00 molec/cm2/s
 HBrdf    HBr drydep flux                8.100E-02  1    36048 1.000E+00 molec/cm2/s
 BrNO3df  BrNO3 drydep flux              1.420E-01  1    36050 1.000E+00 molec/cm2/s
+ISOPNDdf ISOPND drydep flux             1.470E-01  1    36055 1.000E+00 molec/cm2/s
+ISOPNBdf ISOPNB drydep flux             1.470E-01  1    36101 1.000E+00 molec/cm2/s
+PROPNNdf PROPNN drydep flux             1.090E-01  1    36057 1.000E+00 molec/cm2/s
+HACdf    HAC drydep flux                7.400E-02  1    36058 1.000E+00 molec/cm2/s
+GLYCdf   GLYC drydep flux               6.000E-02  1    36059 1.000E+00 molec/cm2/s
+MACRNdf  MACRN drydep flux              1.490E-01  1    36060 1.000E+00 molec/cm2/s
+MVKNdf   MVKN drydep flux               1.490E-01  1    36102 1.000E+00 molec/cm2/s
+RIPdf    RIP drydep flux                1.180E-01  1    36061 1.000E+00 molec/cm2/s
+IEPOXdf  IEPOX drydep flux              1.180E-01  1    36062 1.000E+00 molec/cm2/s
+MAPdf    MAP drydep flux                7.600E-02  1    36063 1.000E+00 molec/cm2/s
 NO2dv    NO2 drydep velocity            4.600E-02  1    37001 1.000E+00 cm/s
 O3dv     O3 drydep velocity             4.800E-02  1    37002 1.000E+00 cm/s
 PANdv    PAN drydep velocity            1.210E-01  1    37003 1.000E+00 cm/s
 HNO3dv   HNO3 drydep velocity           6.300E-02  1    37007 1.000E+00 cm/s
 H2O2dv   H2O2 drydep velocity           3.400E-02  1    37008 1.000E+00 cm/s
 ACETdv   ACET drydep velocity           1.200E-02  3    37009 1.000E+00 cm/s
+ALD2dv   ALD2 drydep velocity           1.200E-02  2    37011 1.000E+00 cm/s
 MVKdv    MVK drydep velocity            7.000E-02  1    37013 1.000E+00 cm/s
 MACRdv   MACR drydep velocity           7.000E-02  1    37014 1.000E+00 cm/s
 PMNdv    PMN drydep velocity            1.470E-01  1    37015 1.000E+00 cm/s
@@ -479,6 +548,16 @@ Br2dv    Br2 drydep velocity            1.600E-01  1    37044 1.000E+00 cm/s
 HOBrdv   HOBr drydep velocity           9.700E-02  1    37047 1.000E+00 cm/s
 HBrdv    HBr drydep velocity            8.100E-02  1    37048 1.000E+00 cm/s
 BrNO3dv  BrNO3 drydep velocity          1.420E-01  1    37050 1.000E+00 cm/s
+ISOPNDdv ISOPND drydep velocity         1.470E-01  1    37055 1.000E+00 cm/s
+ISOPNBdv ISOPNB drydep velocity         1.470E-01  1    37101 1.000E+00 cm/s
+PROPNNdv PROPNN drydep velocity         1.090E-01  1    37057 1.000E+00 cm/s
+HACdv    HAC drydep velocity            7.400E-02  1    37058 1.000E+00 cm/s
+GLYCdv   GLYC drydep velocity           6.000E-02  1    37059 1.000E+00 cm/s
+MACRNdv  MACRN drydep velocity          1.490E-01  1    37060 1.000E+00 cm/s
+MVKNdv   MVKN drydep velocity           1.490E-01  1    37102 1.000E+00 cm/s
+RIPdv    RIP drydep velocity            1.180E-01  1    37061 1.000E+00 cm/s
+IEPOXdv  IEPOX drydep velocity          1.180E-01  1    37062 1.000E+00 cm/s
+MAPdv    MAP drydep velocity            7.600E-02  1    37063 1.000E+00 cm/s
 #==============================================================================
 # ND46 diagnostic quantities
 #==============================================================================
