@@ -23,6 +23,11 @@
 #  SCCS version information: @(#)photol.d	1.2 5/11/94
 #
 # !REVISION HISTORY:
+#  12 Feb 2013 (v9-02g)
+#  ----------------------
+#     Updates from F. Paulot, E. Marais, J. Mao, and M. Evans:
+#     (1) Adopt the Paulot isoprene scheme as standard
+#
 #  17 Jan 2013 (v9-02f)
 #  -----------------------
 #     Update from B. Henderson, J. Mao, and E. Marais (7/18/11):
@@ -125,23 +130,28 @@
    44 INPN       PHOTON     OH         HO2        RCHO NO2  0.00E+00  0.00    100.0  ROOH
    45 PRPN       PHOTON     OH         HO2        RCHO NO2  0.00E+00  0.00    100.0  ROOH
    46 PP         PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH
-   47 GP         PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH
-   48 RIP        PHOTON     OH HO2 CH2O MVK MACR RIO1 IALD  0.00E+00  0.00    100.0  ROOH
-   49 IAP        PHOTON     OH HO2  CO  H2  HAC  GLYC  MGLY 0.00E+00  0.00    100.0  ROOH
-   50 ISNP       PHOTON     OH         HO2        RCHO NO2  0.00E+00  0.00    100.0  ROOH
-   51 VRP        PHOTON     OH  HO2  CH2O  MCO3  GLYC  MGLY 0.00E+00  0.00    100.0  ROOH
-   52 MRP        PHOTON     OH  HO2  MGLY  HAC  CO  CH2O    0.00E+00  0.00    100.0  ROOH 
-   53 MAOP       PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH
-   54 Br2        PHOTON     Br         Br                   0.00E+00  0.00    100.0  Br2
-   55 BrO        PHOTON     Br         O(3P)                0.00E+00  0.00    100.0  BrO
-   56 HOBr       PHOTON     Br         OH                   0.00E+00  0.00    100.0  HOBr
-   57 BrNO3      PHOTON     Br         NO3                  0.00E+00  0.00     85.0  BrNO3
-   58 BrNO3      PHOTON     BrO        NO2                  0.00E+00  0.00     15.0  BrNO3
-   59 BrNO2      PHOTON     Br         NO2                  0.00E+00  0.00    100.0  BrNO2
-   60 CHBr3      PHOTON     Br         Br         Br        0.00E+00  0.00    100.0  CHBr3
-   61 O3         PHOTON     O2         O(1D)                0.00E+00  0.00    100.0  O3_1d
-   62 MPN        PHOTON     HO2        NO3        HCHO      0.00E+00  0.00      5.0  MPN
-   63 MPN        PHOTON     MO2        NO2                  0.00E+00  0.00     95.0  MPN
+   47 RIP        PHOTON     OH HO2 CH2O MVK MACR RIO1 IALD  0.00E+00  0.00    100.0  ROOH
+   48 IAP        PHOTON     OH HO2  CO  H2  HAC  GLYC  MGLY 0.00E+00  0.00    100.0  ROOH
+   49 ISNP       PHOTON     OH HO2  CO  H2  HAC  GLYC  MGLY 0.00E+00  0.00    100.0  ROOH
+   50 VRP        PHOTON     OH  HO2  CH2O  MCO3  GLYC  MGLY 0.00E+00  0.00    100.0  ROOH
+   51 MRP        PHOTON     OH  HO2  MGLY  HAC  CO  CH2O    0.00E+00  0.00    100.0  ROOH 
+   52 MAOP       PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH
+   53 MACRN      PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ONIT1
+   54 MVKN       PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ONIT1   
+   55 ISOPNB     PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ONIT1
+   56 ISOPND     PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ONIT1   
+   57 PROPNN     PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ONIT1
+   58 ATOOH      PHOTON     OH         HO2        RCHO      0.00E+00  0.00    100.0  ROOH
+   59 Br2        PHOTON     Br         Br                   0.00E+00  0.00    100.0  Br2
+   60 BrO        PHOTON     Br         O(3P)                0.00E+00  0.00    100.0  BrO
+   61 HOBr       PHOTON     Br         OH                   0.00E+00  0.00    100.0  HOBr
+   62 BrNO3      PHOTON     Br         NO3                  0.00E+00  0.00     85.0  BrNO3
+   63 BrNO3      PHOTON     BrO        NO2                  0.00E+00  0.00     15.0  BrNO3
+   64 BrNO2      PHOTON     Br         NO2                  0.00E+00  0.00    100.0  BrNO2
+   65 CHBr3      PHOTON     Br         Br         Br        0.00E+00  0.00    100.0  CHBr3
+   66 O3         PHOTON     O2         O(1D)                0.00E+00  0.00    100.0  O3_1d
+   67 MPN        PHOTON     HO2        NO3        HCHO      0.00E+00  0.00      5.0  MPN
+   68 MPN        PHOTON     MO2        NO2                  0.00E+00  0.00     95.0  MPN
  9999                                                       0.00E-00  0.00      0.0         
 
 
