@@ -1,4 +1,4 @@
-GEOS-CHEM SIMULATION v9-02: GEOS-5 NOx-Ox-HC-Aerosol simulation (54 tracers)
+GEOS-CHEM SIMULATION v9-02: GEOS-5 NOx-Ox-HC-Aerosol simulation (63 tracers)
 ------------------------+------------------------------------------------------
 %%% SIMULATION MENU %%% :
 Start YYYYMMDD, HHMMSS  : 20050701 000000
@@ -22,7 +22,7 @@ Global offsets I0, J0   : 0 0
 ------------------------+------------------------------------------------------
 %%% TRACER MENU %%%     : 
 Type of simulation      : 3
-Number of Tracers       : 54
+Number of Tracers       : 63
 Tracer Entries -------> : TR#   Name  g/mole   Tracer Members; () = emitted 
 Tracer #1               :   1   NOx     46.0   NO2  (NO)  NO3   HNO2      
 Tracer #2               :   2   Ox      48.0   (O3)  NO2   2NO3  
@@ -78,6 +78,15 @@ Tracer #51              :  51   CHBr3  253.0   (CHBr3)
 Tracer #52              :  52   CH2Br2 174.0   (CH2Br2)
 Tracer #53              :  53   CH3Br   95.0
 Tracer #54              :  54   MPN     93.0
+Tracer #55              :  55   ISOPN  147.0   ISOPND ISOPNB
+Tracer #56              :  56   MOBA   114.0
+Tracer #57              :  57   PROPNN 109.0   PROPNN
+Tracer #58              :  58   HAC     74.0 
+Tracer #59              :  59   GLYC    60.0 
+Tracer #60              :  60   MMN    149.0   MVKN MACRN
+Tracer #61              :  61   RIP    118.0
+Tracer #62              :  62   IEPOX  118.0
+Tracer #63              :  63   MAP     76.0
 ------------------------+------------------------------------------------------
 %%% TRANSPORT MENU %%%  :
 Turn on Transport       : T
