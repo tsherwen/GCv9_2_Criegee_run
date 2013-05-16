@@ -1,5 +1,5 @@
 #==============================================================================
-# tracerinfo.dat: Created by GEOS-CHEM at 2013/03/20 17:13
+# tracerinfo.dat: Created by GEOS-CHEM at 2013/05/10 09:31
 #
 # ****** CUSTOMIZED FOR NOx-Ox-Hydrocarbon-Aerosol SIMULATION *****
 #
@@ -21,8 +21,8 @@
 #==============================================================================
 # GEOS-CHEM tracers [ppbv]
 #==============================================================================
-NOx      NOx tracer                     1.400E-02  1        1 1.000E+09 ppbv
-Ox       Ox tracer                      4.800E-02  1        2 1.000E+09 ppbv
+NO       NO tracer                      3.000E-02  1        1 1.000E+09 ppbv
+O3       O3 tracer                      4.800E-02  1        2 1.000E+09 ppbv
 PAN      PAN tracer                     1.210E-01  1        3 1.000E+09 ppbv
 CO       CO tracer                      2.800E-02  1        4 1.000E+09 ppbv
 ALK4     ALK4 tracer                    1.200E-02  4        5 1.000E+09 ppbC
@@ -84,12 +84,14 @@ MMN      MMN tracer                     1.490E-01  1       60 1.000E+09 ppbv
 RIP      RIP tracer                     1.180E-01  1       61 1.000E+09 ppbv
 IEPOX    IEPOX tracer                   1.180E-01  1       62 1.000E+09 ppbv
 MAP      MAP tracer                     7.600E-02  1       63 1.000E+09 ppbv
-O3       Pure O3 tracer                 4.800E-02  1       64 1.000E+09 ppbv
+NO2      NO2 tracer                     4.600E-02  1       64 1.000E+09 ppbv
+NO3      NO3 tracer                     6.200E-02  1       65 1.000E+09 ppbv
+HNO2     HNO2 tracer                    4.700E-02  1       66 1.000E+09 ppbv
 #==============================================================================
 # GEOS-CHEM tracers [molec/cm2/s]
 #==============================================================================
-NOx      NOx tracer                     1.400E-02  1     1001 1.000E+00 molec/cm2/s
-Ox       Ox tracer                      4.800E-02  1     1002 1.000E+00 molec/cm2/s
+NO       NO tracer                      3.000E-02  1     1001 1.000E+00 molec/cm2/s
+O3       O3 tracer                      4.800E-02  1     1002 1.000E+00 molec/cm2/s
 PAN      PAN tracer                     1.210E-01  1     1003 1.000E+00 molec/cm2/s
 CO       CO tracer                      2.800E-02  1     1004 1.000E+00 molec/cm2/s
 ALK4     ALK4 tracer                    1.200E-02  4     1005 1.000E+00 atoms C/cm2/s
@@ -151,12 +153,14 @@ MMN      MMN tracer                     1.490E-01  1     1060 1.000E+00 molec/cm
 RIP      RIP tracer                     1.180E-01  1     1061 1.000E+00 molec/cm2/s
 IEPOX    IEPOX tracer                   1.180E-01  1     1062 1.000E+00 molec/cm2/s
 MAP      MAP tracer                     7.600E-02  1     1063 1.000E+00 molec/cm2/s
-O3       Pure O3 tracer                 4.800E-02  1     1064 1.000E+00 molec/cm2/s
+NO2      NO2 tracer                     4.600E-02  1     1064 1.000E+00 molec/cm2/s
+NO3      NO3 tracer                     6.200E-02  1     1065 1.000E+00 molec/cm2/s
+HNO2     HNO2 tracer                    4.700E-02  1     1066 1.000E+00 molec/cm2/s
 #==============================================================================
 # GEOS-CHEM tracers [molec/cm2]
 #==============================================================================
-NOx      NOx tracer                     1.400E-02  1     2001 1.000E+00 molec/cm2
-Ox       Ox tracer                      4.800E-02  1     2002 1.000E+00 molec/cm2
+NO       NO tracer                      3.000E-02  1     2001 1.000E+00 molec/cm2
+O3       O3 tracer                      4.800E-02  1     2002 1.000E+00 molec/cm2
 PAN      PAN tracer                     1.210E-01  1     2003 1.000E+00 molec/cm2
 CO       CO tracer                      2.800E-02  1     2004 1.000E+00 molec/cm2
 ALK4     ALK4 tracer                    1.200E-02  4     2005 1.000E+00 atoms C/cm2
@@ -218,12 +222,14 @@ MMN      MMN tracer                     1.490E-01  1     2060 1.000E+00 molec/cm
 RIP      RIP tracer                     1.180E-01  1     2061 1.000E+00 molec/cm2
 IEPOX    IEPOX tracer                   1.180E-01  1     2062 1.000E+00 molec/cm2
 MAP      MAP tracer                     7.600E-02  1     2063 1.000E+00 molec/cm2
-O3       Pure O3 tracer                 4.800E-02  1     2064 1.000E+00 molec/cm2
+NO2      NO2 tracer                     4.600E-02  1     2064 1.000E+00 molec/cm2
+NO3      NO3 tracer                     6.200E-02  1     2065 1.000E+00 molec/cm2
+HNO2     HNO2 tracer                    4.700E-02  1     2066 1.000E+00 molec/cm2
 #==============================================================================
 # GEOS-CHEM tracers [kg/s]
 #==============================================================================
-NOx      NOx tracer                     1.400E-02  1     3001 1.000E+00 kg/s
-Ox       Ox tracer                      4.800E-02  1     3002 1.000E+00 kg/s
+NO       NO tracer                      3.000E-02  1     3001 1.000E+00 kg/s
+O3       O3 tracer                      4.800E-02  1     3002 1.000E+00 kg/s
 PAN      PAN tracer                     1.210E-01  1     3003 1.000E+00 kg/s
 CO       CO tracer                      2.800E-02  1     3004 1.000E+00 kg/s
 ALK4     ALK4 tracer                    1.200E-02  4     3005 1.000E+00 kg C/s
@@ -285,12 +291,14 @@ MMN      MMN tracer                     1.490E-01  1     3060 1.000E+00 kg/s
 RIP      RIP tracer                     1.180E-01  1     3061 1.000E+00 kg/s
 IEPOX    IEPOX tracer                   1.180E-01  1     3062 1.000E+00 kg/s
 MAP      MAP tracer                     7.600E-02  1     3063 1.000E+00 kg/s
-O3       Pure O3 tracer                 4.800E-02  1     3064 1.000E+00 kg/s
+NO2      NO2 tracer                     4.600E-02  1     3064 1.000E+00 kg/s
+NO3      NO3 tracer                     6.200E-02  1     3065 1.000E+00 kg/s
+HNO2     HNO2 tracer                    4.700E-02  1     3066 1.000E+00 kg/s
 #==============================================================================
 # GEOS-CHEM tracers [kg]
 #==============================================================================
-NOx      NOx tracer                     1.400E-02  1     4001 1.000E+00 kg
-Ox       Ox tracer                      4.800E-02  1     4002 1.000E+00 kg
+NO       NO tracer                      3.000E-02  1     4001 1.000E+00 kg
+O3       O3 tracer                      4.800E-02  1     4002 1.000E+00 kg
 PAN      PAN tracer                     1.210E-01  1     4003 1.000E+00 kg
 CO       CO tracer                      2.800E-02  1     4004 1.000E+00 kg
 ALK4     ALK4 tracer                    1.200E-02  4     4005 1.000E+00 kg C
@@ -352,7 +360,9 @@ MMN      MMN tracer                     1.490E-01  1     4060 1.000E+00 kg
 RIP      RIP tracer                     1.180E-01  1     4061 1.000E+00 kg
 IEPOX    IEPOX tracer                   1.180E-01  1     4062 1.000E+00 kg
 MAP      MAP tracer                     7.600E-02  1     4063 1.000E+00 kg
-O3       Pure O3 tracer                 4.800E-02  1     4064 1.000E+00 kg
+NO2      NO2 tracer                     4.600E-02  1     4064 1.000E+00 kg
+NO3      NO3 tracer                     6.200E-02  1     4065 1.000E+00 kg
+HNO2     HNO2 tracer                    4.700E-02  1     4066 1.000E+00 kg
 #==============================================================================
 # Quantities for Soil NOx restart file
 #==============================================================================
@@ -423,7 +433,7 @@ JBr2     JBr2 photolysis rate           0.000E+00  1    13014 1.000E+00 s-1
 #==============================================================================
 # ND28 diagnostic quantities
 #==============================================================================
-NOx      NOx biomass                    1.400E-02  1    45001 1.000E+00 molec/cm2/s
+NO       NO biomass                     1.400E-02  1    45001 1.000E+00 molec/cm2/s
 CO       CO biomass                     2.800E-02  1    45004 1.000E+00 molec/cm2/s
 ALK4     ALK4 biomass                   1.200E-02  4    45005 1.000E+00 atoms C/cm2/s
 ACET     ACET biomass                   1.200E-02  3    45009 1.000E+00 atoms C/cm2/s
@@ -466,7 +476,6 @@ LXRO2N   Chemically produced LXRO2N     1.550E-01  1    16011 1.000E+00 molec/cm
 #==============================================================================
 # ND44 diagnostic quantities
 #==============================================================================
-NO2df    NO2 drydep flux                4.600E-02  1    36001 1.000E+00 molec/cm2/s
 O3df     O3 drydep flux                 4.800E-02  1    36002 1.000E+00 molec/cm2/s
 PANdf    PAN drydep flux                1.210E-01  1    36003 1.000E+00 molec/cm2/s
 HNO3df   HNO3 drydep flux               6.300E-02  1    36007 1.000E+00 molec/cm2/s
@@ -512,7 +521,7 @@ MVKNdf   MVKN drydep flux               1.490E-01  1    36102 1.000E+00 molec/cm
 RIPdf    RIP drydep flux                1.180E-01  1    36061 1.000E+00 molec/cm2/s
 IEPOXdf  IEPOX drydep flux              1.180E-01  1    36062 1.000E+00 molec/cm2/s
 MAPdf    MAP drydep flux                7.600E-02  1    36063 1.000E+00 molec/cm2/s
-NO2dv    NO2 drydep velocity            4.600E-02  1    37001 1.000E+00 cm/s
+NO2df    NO2 drydep flux                4.600E-02  1    36064 1.000E+00 molec/cm2/s
 O3dv     O3 drydep velocity             4.800E-02  1    37002 1.000E+00 cm/s
 PANdv    PAN drydep velocity            1.210E-01  1    37003 1.000E+00 cm/s
 HNO3dv   HNO3 drydep velocity           6.300E-02  1    37007 1.000E+00 cm/s
@@ -558,6 +567,7 @@ MVKNdv   MVKN drydep velocity           1.490E-01  1    37102 1.000E+00 cm/s
 RIPdv    RIP drydep velocity            1.180E-01  1    37061 1.000E+00 cm/s
 IEPOXdv  IEPOX drydep velocity          1.180E-01  1    37062 1.000E+00 cm/s
 MAPdv    MAP drydep velocity            7.600E-02  1    37063 1.000E+00 cm/s
+NO2dv    NO2 drydep velocity            4.600E-02  1    37064 1.000E+00 cm/s
 #==============================================================================
 # ND46 diagnostic quantities
 #==============================================================================
@@ -590,8 +600,8 @@ TP-PRESS Tropopause pressure            0.000E+00  1    26003 1.000E+00 hPa
 #==============================================================================
 # ND65 diagnostic quantities
 #==============================================================================
-POX      POX P/L family                 4.800E-02  1    17001 1.000E+00 molec/cm3/s
-LOX      LOX P/L family                 4.800E-02  1    17002 1.000E+00 molec/cm3/s
+POX      POX P/L family                 0.000E+00  1    17001 1.000E+00 molec/cm3/s
+LOX      LOX P/L family                 0.000E+00  1    17002 1.000E+00 molec/cm3/s
 PCO      PCO P/L family                 2.800E-02  1    17003 1.000E+00 molec/cm3/s
 LCO      LCO P/L family                 2.800E-02  1    17004 1.000E+00 molec/cm3/s
 PBrOx    PBrOx P/L family               0.000E+00  1    17005 1.000E+00 molec/cm3/s

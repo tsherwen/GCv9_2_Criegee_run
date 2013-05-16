@@ -1,4 +1,4 @@
-GEOS-CHEM SIMULATION v9-02: GEOS-5 NOx-Ox-HC-Aerosol simulation (63 tracers)
+GEOS-CHEM SIMULATION v9-02: GEOS-5 NOx-Ox-HC-Aerosol simulation (66 tracers)
 ------------------------+------------------------------------------------------
 %%% SIMULATION MENU %%% :
 Start YYYYMMDD, HHMMSS  : 20050701 000000
@@ -22,10 +22,10 @@ Global offsets I0, J0   : 0 0
 ------------------------+------------------------------------------------------
 %%% TRACER MENU %%%     : 
 Type of simulation      : 3
-Number of Tracers       : 63
+Number of Tracers       : 66
 Tracer Entries -------> : TR#   Name  g/mole   Tracer Members; () = emitted 
-Tracer #1               :   1   NOx     46.0   NO2  (NO)  NO3   HNO2      
-Tracer #2               :   2   Ox      48.0   (O3)  NO2   2NO3  
+Tracer #1               :   1   NO      30.0   (NO)
+Tracer #2               :   2   O3      48.0   (O3)
 Tracer #3               :   3   PAN    121.0
 Tracer #4               :   4   CO      28.0   (CO)
 Tracer #5               :   5   ALK4    12.0   (4C)
@@ -87,6 +87,9 @@ Tracer #60              :  60   MMN    149.0   MVKN MACRN
 Tracer #61              :  61   RIP    118.0
 Tracer #62              :  62   IEPOX  118.0
 Tracer #63              :  63   MAP     76.0
+Tracer #64              :  64   NO2     46.0
+Tracer #65              :  65   NO3     62.0
+Tracer #66              :  66   HNO2    47.0
 ------------------------+------------------------------------------------------
 %%% TRANSPORT MENU %%%  :
 Turn on Transport       : T
@@ -223,7 +226,7 @@ ND17: Rainout fraction  :  0   all
 ND18: Washout fraction  :  0   all            
 ND19: CH4 loss          :  0   all            
 ND21: Optical depths    : 47   all            
-ND22: J-Values          : 47   1 7 8 20 99              
+ND22: J-Values          : 47   64 7 8 20 99              
       => JV time range  :      11 13
 ND24: E/W transpt flx   :  0   all
 ND25: N/S transpt flx   :  0   all
@@ -246,7 +249,7 @@ ND42: SOA concentrations:  0   all
 ND43: Chem OH,NO,HO2,NO2: 47   all
   ==> OH/HO2 time range :       0 24   
   ==> NO/NO2 time range :      10 14
-ND44: Drydep flx/vel    :  1   1 2 3 7 8 15 16 17 20 22 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 47 48 50
+ND44: Drydep flx/vel    :  1   2 3 7 8 15 16 17 20 22 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 47 48 50 64
 ND45: Tracer Conc's     : 47   all 
   ==> ND45 Time range   :       0 24
 ND46: Biogenic emissions:  1   all
