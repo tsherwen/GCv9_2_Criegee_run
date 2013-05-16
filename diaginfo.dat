@@ -1,5 +1,5 @@
 #==============================================================================
-# diaginfo.dat: Created by GEOS-CHEM at 2013/03/20 17:13
+# diaginfo.dat: Created by GEOS-CHEM at 2013/05/10 09:31
 #
 # ****** CUSTOMIZED FOR NOx-Ox-Hydrocarbon-Aerosol SIMULATION *****
 #
@@ -27,14 +27,14 @@
        0 INST-MAP                                 Instantaneous tracer                    
     1000 ANTHSRCE                                 Anthropogenic emissions                 
     1000 BIOFSRCE                                 Biofuel emissions                       
-    1000 NOX-AC-$                                 Aircraft NOx                            
-    1000 NOX-AN-$                                 Anthropogenic NOx                       
-    1000 NOX-BIOB                                 Biomass NOx                             
-    1000 NOX-BIOF                                 Biofuel NOx                             
-    1000 NOX-LI-$                                 Lightning NOx                           
-    1000 NOX-SOIL                                 Soil NOx                                
-    1000 NOX-FERT                                 Fertilizer NOx                          
-    1000 NOX-STRT                                 Stratopsheric NOx                       
+    1000 NO-AC-$                                  Aircraft NO                             
+    1000 NO-AN-$                                  Anthropogenic NO                        
+    1000 NO-BIOB                                  Biomass NO                              
+    1000 NO-BIOF                                  Biofuel NO                              
+    1000 NO-LI-$                                  Lightning NO                            
+    1000 NO-SOIL                                  Soil NO                                 
+    1000 NO-FERT                                  Fertilizer NO                           
+    1000 NO-STRT                                  Stratopsheric NO                        
     2000 INST_COL                                 Instantaneous columns                   
     3000 CV-FLX-$                                 Convective mass flux                    
     3000 TURBMC-$                                 PBL mixing mass flux                    
