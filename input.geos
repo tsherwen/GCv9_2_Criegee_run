@@ -184,6 +184,7 @@ Use linear. strat. chem?: T
 Chemistry Timestep [min]: 60
 Read and save CSPEC_FULL: F
 USE solver coded by KPP : T
+Gamma HO2               : 0.2
 ------------------------+------------------------------------------------------
 %%% OUTPUT MENU %%%     : 123456789.123456789.123456789.1--1=ZERO+2=BPCH 
 Schedule output for JAN : 3000000000000000000000000000000
