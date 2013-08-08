@@ -116,6 +116,9 @@ Include anthro emiss?   : T
  => Use CAC emissions?  : T
  => Use NEI2005 emiss?  : T
  => Use RETRO emiss?    : T
+Use RCP emiss (anth+bf)?: F
+    => RCP scenario?    : RCP60
+    => RCP year?        : 2000
 Use EPA/NEI99 (anth+bf)?: F
     w/ ICARTT modif.?   : F
     w/ VISTAS NOx emis? : F
@@ -139,6 +142,7 @@ Include biomass emiss?  : T
     => 3-hr GFED3?      : F
 Individual NOx sources  :---
  => Use aircraft NOx?   : T
+    => RCP inventory?   : F
  => Use lightning NOx?  : T
     => Spat-seas constr?: T
  => Use soil NOx        : T
@@ -147,6 +151,7 @@ NOx scaling             : 1
 Use ship SO2 emissions? :---
  => global EDGAR ?      : T
  => global ICOADS ?     : T
+ => global RCP ?        : F
  => EMEP over EUROPE ?  : T
  => ship SO2 Corbett ?  : F
  => ship SO2 Arctas ?   : T
