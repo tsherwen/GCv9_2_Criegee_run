@@ -116,6 +116,7 @@ Include anthro emiss?   : T
  => Use CAC emissions?  : T
  => Use NEI2005 emiss?  : T
  => Use RETRO emiss?    : T
+ => Use AEIC emissions? : T
 Use RCP emiss (anth+bf)?: F
     => RCP scenario?    : RCP60
     => RCP year?        : 2000
@@ -141,8 +142,7 @@ Include biomass emiss?  : T
     => daily GFED3?     : F 
     => 3-hr GFED3?      : F
 Individual NOx sources  :---
- => Use aircraft NOx?   : T
-    => RCP inventory?   : F
+ => Use RCP aircraft NOx: F
  => Use lightning NOx?  : T
     => Spat-seas constr?: T
  => Use soil NOx        : T
