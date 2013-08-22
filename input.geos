@@ -106,7 +106,7 @@ Convect Timestep (min)  : 30
 ------------------------+------------------------------------------------------
 %%% EMISSIONS MENU %%%  :
 Turn on emissions?      : T
-Emiss timestep (min)    : 60 
+Emiss timestep (min)    : 60
 Include anthro emiss?   : T
  => Scale to (1985-2005): -1
  => Use EMEP emissions? : T
@@ -146,6 +146,7 @@ Individual NOx sources  :---
  => Use lightning NOx?  : T
     => Spat-seas constr?: T
  => Use soil NOx        : T
+    => soilNOx rst file?: restart.soilnox.YYYYMMDDhh
  => Use fertilizer NOx  : T
 NOx scaling             : 1
 Use ship SO2 emissions? :---
@@ -171,6 +172,9 @@ Online SULFATE AEROSOLS : T
 Online CRYST/AQ AEROSOLS: F
 Online CARBON  AEROSOLS : T
 Online 2dy ORG AEROSOLS : F
+ => Semivolatile POA?   : F
+ => NAP emiss (TgC/yr)  : 1.0
+ => POA emission scale  : 1.27
 Online DUST    AEROSOLS : T
  => Use DEAD emissions? : T
 Online SEASALT AEROSOLS : T
@@ -188,6 +192,7 @@ Use linear. strat. chem?: T
  => Use Linoz for O3?   : T
 Chemistry Timestep [min]: 60
 Read and save CSPEC_FULL: F
+ => CSPEC rst filename? : restart.cspec.YYYYMMDDhh
 USE solver coded by KPP : T
 Gamma HO2               : 0.2
 ------------------------+------------------------------------------------------
