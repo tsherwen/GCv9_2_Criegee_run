@@ -1,4 +1,4 @@
-jv_spec.dat: AOD optical properties @ 550 nm (clh, 01/30/10)
+jv_spec.dat: AOD optical properties @ 550 nm (clh, 01/30/10), Update sulfate, OC, dust (dar, rvm, gc, 9/13)
 ================================================================================
 NW-SCATTER   56  ! Scattering phase fns, scale extinct @ 999 nm    (mjp 99/07)
  w(nm)    Q    r-eff  ss-alb  pi(0) pi(1) pi(2) pi(3) pi(4) pi(5) pi(6) pi(7)
