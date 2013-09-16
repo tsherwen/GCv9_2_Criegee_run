@@ -1,4 +1,4 @@
-jv_spec.dat:  FAST-J, FJX (jmao 4/09), Updated AOD's (rvm, clh, 3/10), Modif isoprene (fp, 3/10)
+jv_spec.dat:  FAST-J, FJX (jmao 4/09), Updated AOD's (rvm, clh, 3/10), Modif isoprene (fp, 3/10), Update sulfate, OC (dar, rvm, 9/13)
 NW-JValues   37    7    1    7     NJVAL, NWWW, NW1:NW2
 w-beg (nm)    289.00    298.25    307.45    312.45    320.30    345.00    412.45
 w-end (nm)    298.25    307.45    312.45    320.30    345.00    412.45    850.00
