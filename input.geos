@@ -11,7 +11,7 @@ Root data directory     : /as/data/geos/GEOS_4x5/
  => GCAP       subdir   : AGRID/YYYY/MM/
  => GEOS-4     subdir   : GEOS_4_v4/YYYY/MM/
  => GEOS-5     subdir   : GEOS_5/YYYY/MM/
- => GEOS-5.7.x subdir   : GEOS_5.7/YYYY/MM/
+ => GEOS-FP    subdir   : GEOS_FP/YYYY/MM/
  => MERRA      subdir   : MERRA/YYYY/MM/
 Dir w/ 1x1 emissions etc: /as/data/geos/GEOS_1x1/
 Temporary directory     : ./
@@ -65,8 +65,8 @@ Tracer #38              :  38   DST1    29.0
 Tracer #39              :  39   DST2    29.0
 Tracer #40              :  40   DST3    29.0
 Tracer #41              :  41   DST4    29.0
-Tracer #42              :  42   SALA    36.0
-Tracer #43              :  43   SALC    36.0
+Tracer #42              :  42   SALA    31.4
+Tracer #43              :  43   SALC    31.4
 Tracer #44              :  44   Br2    160.0   (Br2)
 Tracer #45              :  45   Br      80.0
 Tracer #46              :  46   BrO     96.0
@@ -93,7 +93,6 @@ Tracer #66              :  66   HNO2    47.0
 ------------------------+------------------------------------------------------
 %%% TRANSPORT MENU %%%  :
 Turn on Transport       : T
- => Use Flux Correction?: F
  => Fill Negative Values: T 
  => IORD, JORD, KORD    : 3  3  7
 Transport Timestep [min]: 30   
@@ -157,8 +156,6 @@ Use ship SO2 emissions? :---
  => ship SO2 Corbett ?  : F
  => ship SO2 Arctas ?   : T
 Use COOKE BC/OC (N. Am.): F   
-Use AVHRR-derived LAI?  : F
-Use MODIS-derived LAI?  : T
 Use historical emiss?   : F
  => What decade?        : 2000
 Bromine switches        :---
@@ -193,7 +190,7 @@ Use linear. strat. chem?: T
 Chemistry Timestep [min]: 60
 Read and save CSPEC_FULL: F
  => CSPEC rst filename? : restart.cspec.YYYYMMDDhh
-USE solver coded by KPP : T
+USE solver coded by KPP : F
 Gamma HO2               : 0.2
 ------------------------+------------------------------------------------------
 %%% OUTPUT MENU %%%     : 123456789.123456789.123456789.1--1=ZERO+2=BPCH 
@@ -251,7 +248,7 @@ ND32: NOx sources       :  1   all
 ND33: Column tracer     :  0   all
 ND34: Biofuel emissions :  1   1 4 5 9 10 11 18 19 20 21
 ND35: Tracers at 500 mb :  0   all
-ND36: Anthro emissions  :  1   1 4 5 9 10 11 18 19 20 21
+ND36: Anthro emissions  :  1   1 2 4 5 7 9 10 11 18 19 20 21
 ND37: Updraft scav frac :  0   all
 ND38: Cld Conv scav loss: 47   all
 ND39: Wetdep scav loss  : 47   all
@@ -259,8 +256,7 @@ ND41: Afternoon PBL ht  :  0   all
 ND42: SOA concentrations:  0   all
 ND43: Chem OH,NO,HO2,NO2: 47   all
   ==> OH/HO2 time range :       0 24   
-  ==> NO/NO2 time range :      10 14
-ND44: Drydep flx/vel    :  1   2 3 7 8 15 16 17 20 22 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 47 48 50 64
+ND44: Drydep flx/vel    : 47   2 3 7 8 9 11 13 14 15 16 17 20 22 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 47 48 50 55 57 58 59 60 61 62 63 64
 ND45: Tracer Conc's     : 47   all 
   ==> ND45 Time range   :       0 24
 ND46: Biogenic emissions:  1   all
@@ -280,7 +276,7 @@ ND64: -                 :  0   all
 ND66: DAO 3-D fields    : 47   all
 ND67: DAO 2-D fields    : 47   all
 ND68: Airmass/Boxheight : 47   all
-ND69: Surface area      :  0   all
+ND69: Surface area      :  1   all
 ND70: Debug output      :  0   all
 ------------------------+------------------------------------------------------
 %%% PLANEFLIGHT MENU %%%:
@@ -306,7 +302,7 @@ LMIN, LMAX of region    :   1   1
 %%% ND50 MENU %%%       :
 Turn on ND50 diagnostic : F
 24-hr avg timeser. file : ts_24h_avg.YYYYMMDD.bpch
-Output as HDF           : F
+Output as HDF5?         : F
 Tracers to include      : 82 83 84 85 86 87
 IMIN, IMAX of region    :   1  72
 JMIN, JMAX of region    :   1  46
@@ -315,7 +311,7 @@ LMIN, LMAX of region    :   1   1
 %%% ND51 MENU %%%       :
 Turn on ND51 diagnostic : F
 LT avg timeseries file  : ts_satellite.YYYYMMDD.bpch
-Output as HDF           : F
+Output as HDF5?         : F
 Tracers to include      : 82 83 84 85 86 87
 GMT Hour for disk write :   0
 Avg Period [LT hours]   :  10  12
@@ -343,7 +339,7 @@ IMIN, IMAX of region    :  70  30
 JMIN, JMAX of region    :  23  46
 -------------------------------------------------------------------------------
 %%% PROD & LOSS MENU %%%:
-Turn on P/L (ND65) diag?: F
+Turn on P/L (ND65) diag?: T
 # of levels for ND65    : 47
 Save O3 P/L (ND20)?     : F
 Number of P/L families  : 7
@@ -370,15 +366,15 @@ File w/ final Ox        : Ox.mass.final
 Save TPCORE BC's        : F
 Input BCs at 2x2.5?     : F
 Over North America?     : F
-TPCORE NA BC directory  : BC_2x25_NA/
+TPCORE NA BC directory  : BC_4x5_NA/
 Over Europe?            : F
-TPCORE EU BC directory  : BC_2x25_EU/
+TPCORE EU BC directory  : BC_4x5_EU/
 Over China?             : F
-TPCORE CH BC directory  : BC_2x25_CH/
-Over SEAC4RS region?    : F
-TPCORE SEAC4RS BC dir   : BC_2x25_SEAC4RS/
+TPCORE CH BC directory  : BC_4x5_CH/
+Over SE Asia region?    : F
+TPCORE SE BC directory  : BC_4x5_SE/
 Over Custom Region?     : F
-TPCORE BC directory     : BC_2x25/
+TPCORE BC directory     : BC_4x5/
 BC timestep [min]       : 180
 LL box of BC region     :   9  26
 UR box of BC region     :  29  41
