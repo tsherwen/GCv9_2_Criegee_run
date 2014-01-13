@@ -1,5 +1,5 @@
 #==============================================================================
-# diaginfo.dat: Created by GEOS-CHEM at 2013/05/10 09:31
+# diaginfo.dat: Created by GEOS-CHEM at 2014/01/09 18:55
 #
 # ****** CUSTOMIZED FOR NOx-Ox-Hydrocarbon-Aerosol SIMULATION *****
 #
@@ -66,9 +66,8 @@
     4000 NH3-BIOF                                 Biofuel NH3 emissions                   
     4000 TROPO-AV                                 Trop avg'd tracer                       
     4000 TCMASS-$                                 Tracer mass (kg)                        
-    6000 SOAGPROD                                 SOA GPROD restart                       
-    6000 SOAAPROD                                 SOA APROD restart                       
    10000 PEDGE-$                                  Pressure at level edges                 
+   10000 PS-PTOP                                  Pressure level edges                    
    11000 DAO-FLDS                                 GMAO 2-D met fields                     
    12000 DAO-3D-$                                 GMAO 3-D met fields                     
    13000 JV-MAP-$                                 Photolysis rates                        
@@ -100,13 +99,12 @@
    33000 OC-BIOB                                  Biomass OC emission                     
    33000 OC-BIOF                                  Biofuel OC emission                     
    33000 OC-BIOG                                  Biogenic OC emission                    
-   33000 OC-ALPH                                  Biogenic ALPH emission                  
+   33000 OC-MTPA                                  Biogenic MTPA emission                  
    33000 OC-LIMO                                  Biogenic ALPH emission                  
-   33000 OC-TERP                                  Biogenic TERP emission                  
-   33000 OC-ALCO                                  Biogenic ALCO emission                  
+   33000 OC-MTPO                                  Biogenic MTPO emission                  
    33000 OC-SESQ                                  Biogenic SESQ emission                  
    33000 PL-BC=$                                  H-philic from H-phobic BC               
-   33000 PL-OC=$                                  H-philic from H-phobic OC               
+   33000 PL-OC=$                                  Philic OC prod/SOA prod                 
    33000 SALT-SR$                                 Sea salt emission                       
    33000 BLKC-SR$                                 Black carbon emission                   
    33000 ORGC-SR$                                 Organic Carbon emission                 
