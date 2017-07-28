@@ -1,0 +1,17 @@
+geos
+*nc
+*ctm*bpch*
+*.pdf
+*.py
+*.txt*
+*.pbs
+*log
+*.sh
+*.orig
+queue_files
+queue_output
+input_files
+results
+Ox.mass*
+
+
