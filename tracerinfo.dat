@@ -1,5 +1,5 @@
 #==============================================================================
-# tracerinfo.dat: Created by GEOS-CHEM at 2017/08/02 12:53
+# tracerinfo.dat: Created by GEOS-CHEM at 2017/08/02 17:09
 #
 # ****** CUSTOMIZED FOR NOx-Ox-Hydrocarbon-Aerosol SIMULATION *****
 #
@@ -579,15 +579,76 @@ PSSO2CR  PSSO2CR P/L family             0.000E+00  1    17021 1.000E+00 molec/cm
 PMSO2CR  PMSO2CR P/L family             0.000E+00  1    17022 1.000E+00 molec/cm3/s
 PCSO2CR  PCSO2CR P/L family             0.000E+00  1    17023 1.000E+00 molec/cm3/s
 POSO2CR  POSO2CR P/L family             0.000E+00  1    17024 1.000E+00 molec/cm3/s
-PAPO3_A  PAPO3_A P/L family             0.000E+00  1    17025 1.000E+00 molec/cm3/s
-PAPO3_B  PAPO3_B P/L family             0.000E+00  1    17026 1.000E+00 molec/cm3/s
-PAPO3_O  PAPO3_O P/L family             0.000E+00  1    17027 1.000E+00 molec/cm3/s
-PAPOH    PAPOH P/L family               0.000E+00  1    17028 1.000E+00 molec/cm3/s
+PAPAH2O  PAPAH2O P/L family             0.000E+00  1    17025 1.000E+00 molec/cm3/s
+PAPASO2  PAPASO2 P/L family             0.000E+00  1    17026 1.000E+00 molec/cm3/s
+PAPBH2O  PAPBH2O P/L family             0.000E+00  1    17027 1.000E+00 molec/cm3/s
+PAPBSO2  PAPBSO2 P/L family             0.000E+00  1    17028 1.000E+00 molec/cm3/s
 PAPNO3   PAPNO3 P/L family              0.000E+00  1    17029 1.000E+00 molec/cm3/s
-PAPAH2O  PAPAH2O P/L family             0.000E+00  1    17030 1.000E+00 molec/cm3/s
-PAPASO2  PAPASO2 P/L family             0.000E+00  1    17031 1.000E+00 molec/cm3/s
-PAPB     PAPB P/L family                0.000E+00  1    17032 1.000E+00 molec/cm3/s
-PAPBSO2  PAPBSO2 P/L family             0.000E+00  1    17033 1.000E+00 molec/cm3/s
+PAPO3_A  PAPO3_A P/L family             0.000E+00  1    17030 1.000E+00 molec/cm3/s
+PAPO3_B  PAPO3_B P/L family             0.000E+00  1    17031 1.000E+00 molec/cm3/s
+PAPO3_O  PAPO3_O P/L family             0.000E+00  1    17032 1.000E+00 molec/cm3/s
+PAPOH    PAPOH P/L family               0.000E+00  1    17033 1.000E+00 molec/cm3/s
+PAPSO2   PAPSO2 P/L family              0.000E+00  1    17034 1.000E+00 molec/cm3/s
+PBPAH2O  PBPAH2O P/L family             0.000E+00  1    17035 1.000E+00 molec/cm3/s
+PBPASO2  PBPASO2 P/L family             0.000E+00  1    17036 1.000E+00 molec/cm3/s
+PBPBH2O  PBPBH2O P/L family             0.000E+00  1    17037 1.000E+00 molec/cm3/s
+PBPBSO2  PBPBSO2 P/L family             0.000E+00  1    17038 1.000E+00 molec/cm3/s
+PBPNO3   PBPNO3 P/L family              0.000E+00  1    17039 1.000E+00 molec/cm3/s
+PBPO3_A  PBPO3_A P/L family             0.000E+00  1    17040 1.000E+00 molec/cm3/s
+PBPO3_B  PBPO3_B P/L family             0.000E+00  1    17041 1.000E+00 molec/cm3/s
+PBPO3_O  PBPO3_O P/L family             0.000E+00  1    17042 1.000E+00 molec/cm3/s
+PBPOH    PBPOH P/L family               0.000E+00  1    17043 1.000E+00 molec/cm3/s
+PBPSO2   PBPSO2 P/L family              0.000E+00  1    17044 1.000E+00 molec/cm3/s
+PCARAH2O PCARAH2O P/L family            0.000E+00  1    17045 1.000E+00 molec/cm3/s
+PCARASO2 PCARASO2 P/L family            0.000E+00  1    17046 1.000E+00 molec/cm3/s
+PCARBH2O PCARBH2O P/L family            0.000E+00  1    17047 1.000E+00 molec/cm3/s
+PCARBSO2 PCARBSO2 P/L family            0.000E+00  1    17048 1.000E+00 molec/cm3/s
+PCARNO3  PCARNO3 P/L family             0.000E+00  1    17049 1.000E+00 molec/cm3/s
+PCARO3_A PCARO3_A P/L family            0.000E+00  1    17050 1.000E+00 molec/cm3/s
+PCARO3_B PCARO3_B P/L family            0.000E+00  1    17051 1.000E+00 molec/cm3/s
+PCARO3_O PCARO3_O P/L family            0.000E+00  1    17052 1.000E+00 molec/cm3/s
+PCAROH   PCAROH P/L family              0.000E+00  1    17053 1.000E+00 molec/cm3/s
+PCARSO2  PCARSO2 P/L family             0.000E+00  1    17054 1.000E+00 molec/cm3/s
+PLIMAH2O PLIMAH2O P/L family            0.000E+00  1    17055 1.000E+00 molec/cm3/s
+PLIMASO2 PLIMASO2 P/L family            0.000E+00  1    17056 1.000E+00 molec/cm3/s
+PLIMBH2O PLIMBH2O P/L family            0.000E+00  1    17057 1.000E+00 molec/cm3/s
+PLIMBSO2 PLIMBSO2 P/L family            0.000E+00  1    17058 1.000E+00 molec/cm3/s
+PLIMNO3  PLIMNO3 P/L family             0.000E+00  1    17059 1.000E+00 molec/cm3/s
+PLIMO3_A PLIMO3_A P/L family            0.000E+00  1    17060 1.000E+00 molec/cm3/s
+PLIMO3_B PLIMO3_B P/L family            0.000E+00  1    17061 1.000E+00 molec/cm3/s
+PLIMO3_O PLIMO3_O P/L family            0.000E+00  1    17062 1.000E+00 molec/cm3/s
+PLIMOH   PLIMOH P/L family              0.000E+00  1    17063 1.000E+00 molec/cm3/s
+PLIMSO2  PLIMSO2 P/L family             0.000E+00  1    17064 1.000E+00 molec/cm3/s
+PMYRAH2O PMYRAH2O P/L family            0.000E+00  1    17065 1.000E+00 molec/cm3/s
+PMYRASO2 PMYRASO2 P/L family            0.000E+00  1    17066 1.000E+00 molec/cm3/s
+PMYRBH2O PMYRBH2O P/L family            0.000E+00  1    17067 1.000E+00 molec/cm3/s
+PMYRBSO2 PMYRBSO2 P/L family            0.000E+00  1    17068 1.000E+00 molec/cm3/s
+PMYRNO3  PMYRNO3 P/L family             0.000E+00  1    17069 1.000E+00 molec/cm3/s
+PMYRO3_A PMYRO3_A P/L family            0.000E+00  1    17070 1.000E+00 molec/cm3/s
+PMYRO3_B PMYRO3_B P/L family            0.000E+00  1    17071 1.000E+00 molec/cm3/s
+PMYRO3_O PMYRO3_O P/L family            0.000E+00  1    17072 1.000E+00 molec/cm3/s
+PMYROH   PMYROH P/L family              0.000E+00  1    17073 1.000E+00 molec/cm3/s
+PMYRSO2  PMYRSO2 P/L family             0.000E+00  1    17074 1.000E+00 molec/cm3/s
+POCAH2O  POCAH2O P/L family             0.000E+00  1    17075 1.000E+00 molec/cm3/s
+POCASO2  POCASO2 P/L family             0.000E+00  1    17076 1.000E+00 molec/cm3/s
+POCBH2O  POCBH2O P/L family             0.000E+00  1    17077 1.000E+00 molec/cm3/s
+POCBSO2  POCBSO2 P/L family             0.000E+00  1    17078 1.000E+00 molec/cm3/s
+POCNO3   POCNO3 P/L family              0.000E+00  1    17079 1.000E+00 molec/cm3/s
+POCO3_A  POCO3_A P/L family             0.000E+00  1    17080 1.000E+00 molec/cm3/s
+POCO3_B  POCO3_B P/L family             0.000E+00  1    17081 1.000E+00 molec/cm3/s
+POCO3_O  POCO3_O P/L family             0.000E+00  1    17082 1.000E+00 molec/cm3/s
+POCOH    POCOH P/L family               0.000E+00  1    17083 1.000E+00 molec/cm3/s
+POCSO2   POCSO2 P/L family              0.000E+00  1    17084 1.000E+00 molec/cm3/s
+PSABAH2O PSABAH2O P/L family            0.000E+00  1    17085 1.000E+00 molec/cm3/s
+PSABASO2 PSABASO2 P/L family            0.000E+00  1    17086 1.000E+00 molec/cm3/s
+PSABBH2O PSABBH2O P/L family            0.000E+00  1    17087 1.000E+00 molec/cm3/s
+PSABBSO2 PSABBSO2 P/L family            0.000E+00  1    17088 1.000E+00 molec/cm3/s
+PSABNO3  PSABNO3 P/L family             0.000E+00  1    17089 1.000E+00 molec/cm3/s
+PSABO3_A PSABO3_A P/L family            0.000E+00  1    17090 1.000E+00 molec/cm3/s
+PSABO3_B PSABO3_B P/L family            0.000E+00  1    17091 1.000E+00 molec/cm3/s
+PSABO3_O PSABO3_O P/L family            0.000E+00  1    17092 1.000E+00 molec/cm3/s
+PSABOH   PSABOH P/L family              0.000E+00  1    17093 1.000E+00 molec/cm3/s
+PSABSO2  PSABSO2 P/L family             0.000E+00  1    17094 1.000E+00 molec/cm3/s
 #==============================================================================
 # ND66 diagnostic quantities
 #==============================================================================
