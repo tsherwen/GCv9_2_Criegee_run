@@ -1,8 +1,8 @@
 GEOS-CHEM SIMULATION v9-02: GEOS-5 NOx-Ox-HC-Aerosol simulation (66 tracers)
 ------------------------+------------------------------------------------------
 %%% SIMULATION MENU %%% :
-Start YYYYMMDD, HHMMSS  : 20060601 000000
-End   YYYYMMDD, HHMMSS  : 20060602 000000
+Start YYYYMMDD, HHMMSS  : 20050101 000000
+End   YYYYMMDD, HHMMSS  : 20050102 000000
 Run directory           : ./
 Input restart file      : restart/restart.4x5.geos5.YYYYMMDDhh
 Make new restart file?  : T
@@ -201,7 +201,7 @@ USE solver coded by KPP : F
 Gamma HO2               : 0.2
 ------------------------+------------------------------------------------------
 %%% OUTPUT MENU %%%     : 123456789.123456789.123456789.1--1=ZERO+2=BPCH 
-Schedule output for JAN : 3000000000000000000000000000000
+Schedule output for JAN : 3300000000000000000000000000000
 Schedule output for FEB : 30000000000000000000000000000  
 Schedule output for MAR : 3000000000000000000000000000000
 Schedule output for APR : 300000000000000000000000000000
@@ -389,7 +389,7 @@ Number of P/L families  : 33
 Dir w/ archived OH files: ./
 ------------------------+------------------------------------------------------
 %%% O3 P/L MENU %%%     : 
-Dir w/ O3 P/L rate files: O3PL/
+Dir w/ O3 P/L rate files: ./
 ------------------------+------------------------------------------------------
 %%% BENCHMARK MENU %%%  :  
 Save benchmark output?  : T
