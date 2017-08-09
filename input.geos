@@ -22,7 +22,7 @@ Global offsets I0, J0   : 0 0
 ------------------------+------------------------------------------------------
 %%% TRACER MENU %%%     : 
 Type of simulation      : 3
-Number of Tracers       : 73
+Number of Tracers       : 87
 Tracer Entries -------> : TR#   Name  g/mole   Tracer Members; () = emitted 
 Tracer #1               :   1   NO      30.0   (NO)
 Tracer #2               :   2   O3      48.0   (O3)
@@ -97,6 +97,20 @@ Tracer #70              :  70   SABIN   12.0   (10C)
 Tracer #71              :  71   MYRCN   12.0   (10C)
 Tracer #72              :  72   CAREN   12.0   (10C)
 Tracer #73              :  73   OCIMN   12.0   (10C)
+Tracer #74              :  74   OCSCIB   12.0   (10C)
+Tracer #75              :  75   OCSCIA   12.0   (10C)
+Tracer #76              :  76   BPSCIB   12.0   (10C)
+Tracer #77              :  77   BPSCIA   12.0   (10C)
+Tracer #78              :  78   SABSCIB   12.0   (10C)
+Tracer #79              :  79   SABSCIA   12.0   (10C)
+Tracer #80              :  80   LIMSCIB   12.0   (10C)
+Tracer #81              :  81   LIMSCIA   12.0   (10C)
+Tracer #82              :  82   CARSCIB   12.0   (10C)
+Tracer #83              :  83   CARSCIA   12.0   (10C)
+Tracer #84              :  84   MYRSCIB   12.0   (10C)
+Tracer #85              :  85   MYRSCIA   12.0   (10C)
+Tracer #86              :  86   APSCIB   12.0   (10C)
+Tracer #87              :  87   APSCIA   12.0   (10C)
 ------------------------+------------------------------------------------------
 %%% TRANSPORT MENU %%%  :
 Turn on Transport       : T
