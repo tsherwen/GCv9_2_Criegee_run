@@ -1,5 +1,5 @@
 #==============================================================================
-# tracerinfo.dat: Created by GEOS-CHEM at 2017/08/09 11:49
+# tracerinfo.dat: Created by GEOS-CHEM at 2017/08/23 13:11
 #
 # ****** CUSTOMIZED FOR NOx-Ox-Hydrocarbon-Aerosol SIMULATION *****
 #
@@ -95,19 +95,17 @@ MYRCN    MYRCN tracer                   1.200E-02 10       71 1.000E+09 ppbC
 CAREN    CAREN tracer                   1.200E-02 10       72 1.000E+09 ppbC
 OCIMN    OCIMN tracer                   1.200E-02 10       73 1.000E+09 ppbC
 OCSCIB   OCSCIB tracer                  1.200E-02 10       74 1.000E+09 ppbC
-OCSCIA   OCSCIA tracer                  1.200E-02 10       75 1.000E+09 ppbC
-BPSCIB   BPSCIB tracer                  1.200E-02 10       76 1.000E+09 ppbC
-BPSCIA   BPSCIA tracer                  1.200E-02 10       77 1.000E+09 ppbC
-SABSCIB  SABSCIB tracer                 1.200E-02 10       78 1.000E+09 ppbC
-SABSCIA  SABSCIA tracer                 1.200E-02 10       79 1.000E+09 ppbC
-LIMSCIB  LIMSCIB tracer                 1.200E-02 10       80 1.000E+09 ppbC
-LIMSCIA  LIMSCIA tracer                 1.200E-02 10       81 1.000E+09 ppbC
-CARSCIB  CARSCIB tracer                 1.200E-02 10       82 1.000E+09 ppbC
-CARSCIA  CARSCIA tracer                 1.200E-02 10       83 1.000E+09 ppbC
-MYRSCIB  MYRSCIB tracer                 1.200E-02 10       84 1.000E+09 ppbC
-MYRSCIA  MYRSCIA tracer                 1.200E-02 10       85 1.000E+09 ppbC
-APSCIB   APSCIB tracer                  1.200E-02 10       86 1.000E+09 ppbC
-APSCIA   APSCIA tracer                  1.200E-02 10       87 1.000E+09 ppbC
+BPSCIB   BPSCIB tracer                  1.200E-02 10       75 1.000E+09 ppbC
+BPSCIA   BPSCIA tracer                  1.200E-02 10       76 1.000E+09 ppbC
+SABSCIB  SABSCIB tracer                 1.200E-02 10       77 1.000E+09 ppbC
+SABSCIA  SABSCIA tracer                 1.200E-02 10       78 1.000E+09 ppbC
+LIMSCIB  LIMSCIB tracer                 1.200E-02 10       79 1.000E+09 ppbC
+LIMSCIA  LIMSCIA tracer                 1.200E-02 10       80 1.000E+09 ppbC
+CARSCIB  CARSCIB tracer                 1.200E-02 10       81 1.000E+09 ppbC
+CARSCIA  CARSCIA tracer                 1.200E-02 10       82 1.000E+09 ppbC
+MYRSCIB  MYRSCIB tracer                 1.200E-02 10       83 1.000E+09 ppbC
+APSCIB   APSCIB tracer                  1.200E-02 10       84 1.000E+09 ppbC
+APSCIA   APSCIA tracer                  1.200E-02 10       85 1.000E+09 ppbC
 #==============================================================================
 # GEOS-CHEM tracers [molec/cm2/s]
 #==============================================================================
@@ -185,19 +183,17 @@ MYRCN    MYRCN tracer                   1.200E-02 10     1071 1.000E+00 atoms C/
 CAREN    CAREN tracer                   1.200E-02 10     1072 1.000E+00 atoms C/cm2/s
 OCIMN    OCIMN tracer                   1.200E-02 10     1073 1.000E+00 atoms C/cm2/s
 OCSCIB   OCSCIB tracer                  1.200E-02 10     1074 1.000E+00 atoms C/cm2/s
-OCSCIA   OCSCIA tracer                  1.200E-02 10     1075 1.000E+00 atoms C/cm2/s
-BPSCIB   BPSCIB tracer                  1.200E-02 10     1076 1.000E+00 atoms C/cm2/s
-BPSCIA   BPSCIA tracer                  1.200E-02 10     1077 1.000E+00 atoms C/cm2/s
-SABSCIB  SABSCIB tracer                 1.200E-02 10     1078 1.000E+00 atoms C/cm2/s
-SABSCIA  SABSCIA tracer                 1.200E-02 10     1079 1.000E+00 atoms C/cm2/s
-LIMSCIB  LIMSCIB tracer                 1.200E-02 10     1080 1.000E+00 atoms C/cm2/s
-LIMSCIA  LIMSCIA tracer                 1.200E-02 10     1081 1.000E+00 atoms C/cm2/s
-CARSCIB  CARSCIB tracer                 1.200E-02 10     1082 1.000E+00 atoms C/cm2/s
-CARSCIA  CARSCIA tracer                 1.200E-02 10     1083 1.000E+00 atoms C/cm2/s
-MYRSCIB  MYRSCIB tracer                 1.200E-02 10     1084 1.000E+00 atoms C/cm2/s
-MYRSCIA  MYRSCIA tracer                 1.200E-02 10     1085 1.000E+00 atoms C/cm2/s
-APSCIB   APSCIB tracer                  1.200E-02 10     1086 1.000E+00 atoms C/cm2/s
-APSCIA   APSCIA tracer                  1.200E-02 10     1087 1.000E+00 atoms C/cm2/s
+BPSCIB   BPSCIB tracer                  1.200E-02 10     1075 1.000E+00 atoms C/cm2/s
+BPSCIA   BPSCIA tracer                  1.200E-02 10     1076 1.000E+00 atoms C/cm2/s
+SABSCIB  SABSCIB tracer                 1.200E-02 10     1077 1.000E+00 atoms C/cm2/s
+SABSCIA  SABSCIA tracer                 1.200E-02 10     1078 1.000E+00 atoms C/cm2/s
+LIMSCIB  LIMSCIB tracer                 1.200E-02 10     1079 1.000E+00 atoms C/cm2/s
+LIMSCIA  LIMSCIA tracer                 1.200E-02 10     1080 1.000E+00 atoms C/cm2/s
+CARSCIB  CARSCIB tracer                 1.200E-02 10     1081 1.000E+00 atoms C/cm2/s
+CARSCIA  CARSCIA tracer                 1.200E-02 10     1082 1.000E+00 atoms C/cm2/s
+MYRSCIB  MYRSCIB tracer                 1.200E-02 10     1083 1.000E+00 atoms C/cm2/s
+APSCIB   APSCIB tracer                  1.200E-02 10     1084 1.000E+00 atoms C/cm2/s
+APSCIA   APSCIA tracer                  1.200E-02 10     1085 1.000E+00 atoms C/cm2/s
 #==============================================================================
 # GEOS-CHEM tracers [molec/cm2]
 #==============================================================================
@@ -275,19 +271,17 @@ MYRCN    MYRCN tracer                   1.200E-02 10     2071 1.000E+00 atoms C/
 CAREN    CAREN tracer                   1.200E-02 10     2072 1.000E+00 atoms C/cm2
 OCIMN    OCIMN tracer                   1.200E-02 10     2073 1.000E+00 atoms C/cm2
 OCSCIB   OCSCIB tracer                  1.200E-02 10     2074 1.000E+00 atoms C/cm2
-OCSCIA   OCSCIA tracer                  1.200E-02 10     2075 1.000E+00 atoms C/cm2
-BPSCIB   BPSCIB tracer                  1.200E-02 10     2076 1.000E+00 atoms C/cm2
-BPSCIA   BPSCIA tracer                  1.200E-02 10     2077 1.000E+00 atoms C/cm2
-SABSCIB  SABSCIB tracer                 1.200E-02 10     2078 1.000E+00 atoms C/cm2
-SABSCIA  SABSCIA tracer                 1.200E-02 10     2079 1.000E+00 atoms C/cm2
-LIMSCIB  LIMSCIB tracer                 1.200E-02 10     2080 1.000E+00 atoms C/cm2
-LIMSCIA  LIMSCIA tracer                 1.200E-02 10     2081 1.000E+00 atoms C/cm2
-CARSCIB  CARSCIB tracer                 1.200E-02 10     2082 1.000E+00 atoms C/cm2
-CARSCIA  CARSCIA tracer                 1.200E-02 10     2083 1.000E+00 atoms C/cm2
-MYRSCIB  MYRSCIB tracer                 1.200E-02 10     2084 1.000E+00 atoms C/cm2
-MYRSCIA  MYRSCIA tracer                 1.200E-02 10     2085 1.000E+00 atoms C/cm2
-APSCIB   APSCIB tracer                  1.200E-02 10     2086 1.000E+00 atoms C/cm2
-APSCIA   APSCIA tracer                  1.200E-02 10     2087 1.000E+00 atoms C/cm2
+BPSCIB   BPSCIB tracer                  1.200E-02 10     2075 1.000E+00 atoms C/cm2
+BPSCIA   BPSCIA tracer                  1.200E-02 10     2076 1.000E+00 atoms C/cm2
+SABSCIB  SABSCIB tracer                 1.200E-02 10     2077 1.000E+00 atoms C/cm2
+SABSCIA  SABSCIA tracer                 1.200E-02 10     2078 1.000E+00 atoms C/cm2
+LIMSCIB  LIMSCIB tracer                 1.200E-02 10     2079 1.000E+00 atoms C/cm2
+LIMSCIA  LIMSCIA tracer                 1.200E-02 10     2080 1.000E+00 atoms C/cm2
+CARSCIB  CARSCIB tracer                 1.200E-02 10     2081 1.000E+00 atoms C/cm2
+CARSCIA  CARSCIA tracer                 1.200E-02 10     2082 1.000E+00 atoms C/cm2
+MYRSCIB  MYRSCIB tracer                 1.200E-02 10     2083 1.000E+00 atoms C/cm2
+APSCIB   APSCIB tracer                  1.200E-02 10     2084 1.000E+00 atoms C/cm2
+APSCIA   APSCIA tracer                  1.200E-02 10     2085 1.000E+00 atoms C/cm2
 #==============================================================================
 # GEOS-CHEM tracers [kg/s]
 #==============================================================================
@@ -365,19 +359,17 @@ MYRCN    MYRCN tracer                   1.200E-02 10     3071 1.000E+00 kg C/s
 CAREN    CAREN tracer                   1.200E-02 10     3072 1.000E+00 kg C/s
 OCIMN    OCIMN tracer                   1.200E-02 10     3073 1.000E+00 kg C/s
 OCSCIB   OCSCIB tracer                  1.200E-02 10     3074 1.000E+00 kg C/s
-OCSCIA   OCSCIA tracer                  1.200E-02 10     3075 1.000E+00 kg C/s
-BPSCIB   BPSCIB tracer                  1.200E-02 10     3076 1.000E+00 kg C/s
-BPSCIA   BPSCIA tracer                  1.200E-02 10     3077 1.000E+00 kg C/s
-SABSCIB  SABSCIB tracer                 1.200E-02 10     3078 1.000E+00 kg C/s
-SABSCIA  SABSCIA tracer                 1.200E-02 10     3079 1.000E+00 kg C/s
-LIMSCIB  LIMSCIB tracer                 1.200E-02 10     3080 1.000E+00 kg C/s
-LIMSCIA  LIMSCIA tracer                 1.200E-02 10     3081 1.000E+00 kg C/s
-CARSCIB  CARSCIB tracer                 1.200E-02 10     3082 1.000E+00 kg C/s
-CARSCIA  CARSCIA tracer                 1.200E-02 10     3083 1.000E+00 kg C/s
-MYRSCIB  MYRSCIB tracer                 1.200E-02 10     3084 1.000E+00 kg C/s
-MYRSCIA  MYRSCIA tracer                 1.200E-02 10     3085 1.000E+00 kg C/s
-APSCIB   APSCIB tracer                  1.200E-02 10     3086 1.000E+00 kg C/s
-APSCIA   APSCIA tracer                  1.200E-02 10     3087 1.000E+00 kg C/s
+BPSCIB   BPSCIB tracer                  1.200E-02 10     3075 1.000E+00 kg C/s
+BPSCIA   BPSCIA tracer                  1.200E-02 10     3076 1.000E+00 kg C/s
+SABSCIB  SABSCIB tracer                 1.200E-02 10     3077 1.000E+00 kg C/s
+SABSCIA  SABSCIA tracer                 1.200E-02 10     3078 1.000E+00 kg C/s
+LIMSCIB  LIMSCIB tracer                 1.200E-02 10     3079 1.000E+00 kg C/s
+LIMSCIA  LIMSCIA tracer                 1.200E-02 10     3080 1.000E+00 kg C/s
+CARSCIB  CARSCIB tracer                 1.200E-02 10     3081 1.000E+00 kg C/s
+CARSCIA  CARSCIA tracer                 1.200E-02 10     3082 1.000E+00 kg C/s
+MYRSCIB  MYRSCIB tracer                 1.200E-02 10     3083 1.000E+00 kg C/s
+APSCIB   APSCIB tracer                  1.200E-02 10     3084 1.000E+00 kg C/s
+APSCIA   APSCIA tracer                  1.200E-02 10     3085 1.000E+00 kg C/s
 #==============================================================================
 # GEOS-CHEM tracers [kg]
 #==============================================================================
@@ -455,19 +447,17 @@ MYRCN    MYRCN tracer                   1.200E-02 10     4071 1.000E+00 kg C
 CAREN    CAREN tracer                   1.200E-02 10     4072 1.000E+00 kg C
 OCIMN    OCIMN tracer                   1.200E-02 10     4073 1.000E+00 kg C
 OCSCIB   OCSCIB tracer                  1.200E-02 10     4074 1.000E+00 kg C
-OCSCIA   OCSCIA tracer                  1.200E-02 10     4075 1.000E+00 kg C
-BPSCIB   BPSCIB tracer                  1.200E-02 10     4076 1.000E+00 kg C
-BPSCIA   BPSCIA tracer                  1.200E-02 10     4077 1.000E+00 kg C
-SABSCIB  SABSCIB tracer                 1.200E-02 10     4078 1.000E+00 kg C
-SABSCIA  SABSCIA tracer                 1.200E-02 10     4079 1.000E+00 kg C
-LIMSCIB  LIMSCIB tracer                 1.200E-02 10     4080 1.000E+00 kg C
-LIMSCIA  LIMSCIA tracer                 1.200E-02 10     4081 1.000E+00 kg C
-CARSCIB  CARSCIB tracer                 1.200E-02 10     4082 1.000E+00 kg C
-CARSCIA  CARSCIA tracer                 1.200E-02 10     4083 1.000E+00 kg C
-MYRSCIB  MYRSCIB tracer                 1.200E-02 10     4084 1.000E+00 kg C
-MYRSCIA  MYRSCIA tracer                 1.200E-02 10     4085 1.000E+00 kg C
-APSCIB   APSCIB tracer                  1.200E-02 10     4086 1.000E+00 kg C
-APSCIA   APSCIA tracer                  1.200E-02 10     4087 1.000E+00 kg C
+BPSCIB   BPSCIB tracer                  1.200E-02 10     4075 1.000E+00 kg C
+BPSCIA   BPSCIA tracer                  1.200E-02 10     4076 1.000E+00 kg C
+SABSCIB  SABSCIB tracer                 1.200E-02 10     4077 1.000E+00 kg C
+SABSCIA  SABSCIA tracer                 1.200E-02 10     4078 1.000E+00 kg C
+LIMSCIB  LIMSCIB tracer                 1.200E-02 10     4079 1.000E+00 kg C
+LIMSCIA  LIMSCIA tracer                 1.200E-02 10     4080 1.000E+00 kg C
+CARSCIB  CARSCIB tracer                 1.200E-02 10     4081 1.000E+00 kg C
+CARSCIA  CARSCIA tracer                 1.200E-02 10     4082 1.000E+00 kg C
+MYRSCIB  MYRSCIB tracer                 1.200E-02 10     4083 1.000E+00 kg C
+APSCIB   APSCIB tracer                  1.200E-02 10     4084 1.000E+00 kg C
+APSCIA   APSCIA tracer                  1.200E-02 10     4085 1.000E+00 kg C
 #==============================================================================
 # Quantities for Soil NOx restart file
 #==============================================================================
@@ -533,12 +523,12 @@ HOBrdf   HOBr drydep flux               9.700E-02  1    36047 1.000E+00 molec/cm
 HBrdf    HBr drydep flux                8.100E-02  1    36048 1.000E+00 molec/cm2/s
 BrNO3df  BrNO3 drydep flux              1.420E-01  1    36050 1.000E+00 molec/cm2/s
 ISOPNDdf ISOPND drydep flux             1.470E-01  1    36055 1.000E+00 molec/cm2/s
-ISOPNBdf ISOPNB drydep flux             1.470E-01  1    36088 1.000E+00 molec/cm2/s
+ISOPNBdf ISOPNB drydep flux             1.470E-01  1    36086 1.000E+00 molec/cm2/s
 PROPNNdf PROPNN drydep flux             1.090E-01  1    36057 1.000E+00 molec/cm2/s
 HACdf    HAC drydep flux                7.400E-02  1    36058 1.000E+00 molec/cm2/s
 GLYCdf   GLYC drydep flux               6.000E-02  1    36059 1.000E+00 molec/cm2/s
 MACRNdf  MACRN drydep flux              1.490E-01  1    36060 1.000E+00 molec/cm2/s
-MVKNdf   MVKN drydep flux               1.490E-01  1    36089 1.000E+00 molec/cm2/s
+MVKNdf   MVKN drydep flux               1.490E-01  1    36087 1.000E+00 molec/cm2/s
 RIPdf    RIP drydep flux                1.180E-01  1    36061 1.000E+00 molec/cm2/s
 IEPOXdf  IEPOX drydep flux              1.180E-01  1    36062 1.000E+00 molec/cm2/s
 MAPdf    MAP drydep flux                7.600E-02  1    36063 1.000E+00 molec/cm2/s
@@ -579,12 +569,12 @@ HOBrdv   HOBr drydep velocity           9.700E-02  1    37047 1.000E+00 cm/s
 HBrdv    HBr drydep velocity            8.100E-02  1    37048 1.000E+00 cm/s
 BrNO3dv  BrNO3 drydep velocity          1.420E-01  1    37050 1.000E+00 cm/s
 ISOPNDdv ISOPND drydep velocity         1.470E-01  1    37055 1.000E+00 cm/s
-ISOPNBdv ISOPNB drydep velocity         1.470E-01  1    37088 1.000E+00 cm/s
+ISOPNBdv ISOPNB drydep velocity         1.470E-01  1    37086 1.000E+00 cm/s
 PROPNNdv PROPNN drydep velocity         1.090E-01  1    37057 1.000E+00 cm/s
 HACdv    HAC drydep velocity            7.400E-02  1    37058 1.000E+00 cm/s
 GLYCdv   GLYC drydep velocity           6.000E-02  1    37059 1.000E+00 cm/s
 MACRNdv  MACRN drydep velocity          1.490E-01  1    37060 1.000E+00 cm/s
-MVKNdv   MVKN drydep velocity           1.490E-01  1    37089 1.000E+00 cm/s
+MVKNdv   MVKN drydep velocity           1.490E-01  1    37087 1.000E+00 cm/s
 RIPdv    RIP drydep velocity            1.180E-01  1    37061 1.000E+00 cm/s
 IEPOXdv  IEPOX drydep velocity          1.180E-01  1    37062 1.000E+00 cm/s
 MAPdv    MAP drydep velocity            7.600E-02  1    37063 1.000E+00 cm/s
