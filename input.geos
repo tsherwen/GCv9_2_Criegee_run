@@ -1,8 +1,8 @@
 GEOS-CHEM SIMULATION v9-02: GEOS-5 NOx-Ox-HC-Aerosol simulation (66 tracers)
 ------------------------+------------------------------------------------------
 %%% SIMULATION MENU %%% :
-Start YYYYMMDD, HHMMSS  : 20050101 000000
-End   YYYYMMDD, HHMMSS  : 20050103 000000
+Start YYYYMMDD, HHMMSS  : 20040101 000000
+End   YYYYMMDD, HHMMSS  : 20060101 000000
 Run directory           : ./
 Input restart file      : restart/restart.4x5.geos5.YYYYMMDDhh
 Make new restart file?  : T
@@ -125,7 +125,7 @@ Convect Timestep (min)  : 30
 %%% EMISSIONS MENU %%%  :
 Turn on emissions?      : T
 Emiss timestep (min)    : 60
-Include anthro emiss?   : F
+Include anthro emiss?   : T
  => Scale to (1985-2005): -1
  => Use EMEP emissions? : T
  => Use BRAVO emissions?: T
@@ -137,7 +137,7 @@ Include anthro emiss?   : F
  => Use AEIC emissions? : T
 Use RCP emiss (anth+bf)?: F
     => RCP scenario?    : RCP60
-    => RCP year?        : 1750
+    => RCP year?        : 2000
 Use EPA/NEI99 (anth+bf)?: F
     w/ ICARTT modif.?   : F
     w/ VISTAS NOx emis? : F
@@ -176,7 +176,7 @@ Use ship SO2 emissions? :---
  => ship SO2 Arctas ?   : T
 Use COOKE BC/OC (N. Am.): F   
 Use historical emiss?   : F
- => What decade?        : 1750
+ => What decade?        : 2000
 Bromine switches        :---
  => Use Warwick VSLS?   : T
  => Use seasalt Br2?    : T
@@ -213,7 +213,7 @@ USE solver coded by KPP : F
 Gamma HO2               : 0.2
 ------------------------+------------------------------------------------------
 %%% OUTPUT MENU %%%     : 123456789.123456789.123456789.1--1=ZERO+2=BPCH 
-Schedule output for JAN : 3330000000000000000000000000000
+Schedule output for JAN : 3000000000000000000000000000000
 Schedule output for FEB : 30000000000000000000000000000  
 Schedule output for MAR : 3000000000000000000000000000000
 Schedule output for APR : 300000000000000000000000000000
@@ -486,10 +486,6 @@ BC timestep [min]       : 180
 LL box of BC region     :   9  26
 UR box of BC region     :  29  41
 1x1 offsets I0_W, J0_W  :   3   3
-------------------------+------------------------------------------------------
-%%% PREIND MENU %%%     :
-Preindustrail run?      : T
-Biomass Burning Scale   : 0.10
 ------------------------+------------------------------------------------------
 %%% UNIX CMDS MENU %%%  : 
 Background symbol       : & 
