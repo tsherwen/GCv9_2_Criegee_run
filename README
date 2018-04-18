@@ -9,3 +9,10 @@ This set of input files was used for the 1-month benchmark.
 
 The restart file was obtained from the 1-year benchmark simulation
 v9-02r-geos5-Run0.
+
+Updates: 
+
+# GCv9_2_Criegee_run
+GEOS-Chem run (v9-02, http://www.geos-chem.org/) directory updated for Criegee chemistry (Newland et al. 2018, https://doi.org/10.5194/acp-2017-1095).
+
+https://zenodo.org/badge/DOI/10.5281/zenodo.1220387.svg
